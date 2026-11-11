@@ -2,7 +2,7 @@ import argparse
 
 from ragbot import ChatSession, Settings
 from ragbot.embeddings import OllamaEmbedder
-from ragbot.ingestion import ImageDescriber, IngestionPipeline, TextChunker
+from ragbot.ingestion import IngestionPipeline, TextChunker
 from ragbot.llm import OllamaLLM
 from ragbot.retriever import Retriever
 from ragbot.vectorstore import VectorStore
@@ -13,7 +13,6 @@ def ingest(settings: Settings, pdf_paths: list[str]) -> None:
         store=VectorStore(settings.chroma_path, settings.collection_name),
         embedder=OllamaEmbedder(settings.embed_model),
         chunker=TextChunker(settings.chunk_size, settings.chunk_overlap),
-        describer=ImageDescriber(OllamaLLM(settings.chat_model)),
         image_dir=settings.page_image_dir,
         render_dpi=settings.render_dpi,
     )
