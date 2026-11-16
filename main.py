@@ -1,9 +1,10 @@
 import argparse
 
 from ragbot import ChatSession, Settings
-from ragbot.embeddings import OllamaEmbedder
+from ragbot.embeddings import HFEmbedder
 from ragbot.ingestion import IngestionPipeline, TextChunker
 from ragbot.llm import OllamaLLM
+from ragbot.reranker import HFReranker
 from ragbot.retriever import Retriever
 from ragbot.vectorstore import VectorStore
 
@@ -11,7 +12,7 @@ from ragbot.vectorstore import VectorStore
 def ingest(settings: Settings, pdf_paths: list[str]) -> None:
     pipeline = IngestionPipeline(
         store=VectorStore(settings.chroma_path, settings.collection_name),
-        embedder=OllamaEmbedder(settings.embed_model),
+        embedder=HFEmbedder(settings.embed_model),
         chunker=TextChunker(settings.chunk_size, settings.chunk_overlap),
         image_dir=settings.page_image_dir,
         render_dpi=settings.render_dpi,
@@ -24,9 +25,16 @@ def ingest(settings: Settings, pdf_paths: list[str]) -> None:
 
 def chat(settings: Settings) -> None:
     store = VectorStore(settings.chroma_path, settings.collection_name)
-    retriever = Retriever(store, OllamaEmbedder(settings.embed_model), top_k=settings.top_k)
+    retriever = Retriever(
+        store,
+        HFEmbedder(settings.embed_model),
+        top_k=settings.top_k,
+        reranker=HFReranker(settings.rerank_model),
+        rerank_top_n=settings.rerank_top_n,
+        rerank_min_score=settings.rerank_min_score,
+    )
     session = ChatSession(
-        llm=OllamaLLM(settings.chat_model),
+        llm=OllamaLLM(settings.chat_model, settings.chat_temperature, settings.chat_think),
         retriever=retriever,
         max_history_turns=settings.max_history_turns,
     )
@@ -52,7 +60,7 @@ def chat(settings: Settings) -> None:
             print(token, end='', flush=True)
         print()
         if sources:
-            print('Quellen: ' + ', '.join(f'{s.chunk.id} ({s.distance:.2f})' for s in sources))
+            print('Quellen: ' + ', '.join(f'{s.chunk.id} (Score {s.score:.2f}, Distanz {s.distance:.2f})' for s in sources))
 
 
 def main() -> None:
