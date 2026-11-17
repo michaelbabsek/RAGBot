@@ -1,0 +1,9 @@
+chromadb
+ollama
+pymupdf
+torch
+transformers>=4.57
+sentence-transformers
+accelerate
+pillow
+qwen-vl-utils
