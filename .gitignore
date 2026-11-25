@@ -1,0 +1,7 @@
+# Lokale Daten und Artefakte
+docs/
+chroma_db/
+data/
+__pycache__/
+.idea/
+.DS_Store
