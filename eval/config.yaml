@@ -1,0 +1,60 @@
+# Konfiguration der Retrieval-Evaluation. Pfade relativ zum Repo-Root.
+seed: 42
+
+paths:
+  docs_dir: docs
+  source_index: chroma_db          # Index von RAGBot (wird nur kopiert, nie verändert)
+  index_snapshot: eval/index_snapshot/chroma_db
+  page_image_dir: data/pages
+  data_dir: eval/data
+  runs_dir: eval/runs
+  results_dir: eval/results
+
+# Stufe 1: Seitenauswahl
+select:
+  n_text: 120
+  n_visual: 180
+  # Nur als Ablenker im Index, keine Gold-Seiten (reine Nachschlage-Tabellen)
+  exclude_docs:
+    - binomialverteilungstabelle (1).pdf
+    - normalverteilungstabelle (1).pdf
+  scan_max_chars: 50             # weniger Text + großes Bild = Scan
+  scan_min_image_frac: 0.5
+  empty_max_chars: 80            # weniger Text ohne großes Bild = leer
+  visual_min_image_frac: 0.15    # Bild mit mind. diesem Flächenanteil = Abbildung
+  visual_min_drawings_over_median: 15  # Vektorgrafiken über dem Dokument-Median (Folienvorlagen!)
+  text_min_chars: 300
+  text_max_image_frac: 0.05
+  text_max_drawings_over_median: 5
+  title_max_words: 30            # erste Seite eines Dokuments mit so wenig Wörtern = Titelseite
+  toc_keywords: [inhalt, inhaltsverzeichnis, agenda, gliederung, überblick, outline, contents]
+  near_dup_containment: 0.8      # Wortmengen-Überdeckung für Äquivalenzklassen
+  near_dup_min_words: 15
+
+# Stufe 2: Fragengenerierung (bewusst NICHT Qwen3-VL)
+generation:
+  model: gemma4:e4b             # 26b überlastet 24 GB RAM
+  temperature: 0
+  seed: 42
+  think: false
+  max_page_chars: 6000           # Kürzung des Seitentexts im Prompt
+  verbatim_ngram: 5              # Warnung, wenn die Frage so viele Wörter am Stück von der Seite übernimmt
+
+# Stufe 3: Retrieval (entspricht ragbot.config.Settings)
+retrieval:
+  candidates: 16
+  top_n: 4
+  rerank_min_score: 0.0          # nur für die Zusatzzeile "MM-R (min_score=0)"
+  warmup_queries: 2
+
+configs:
+  MM-0:  {where: null, rerank: false}
+  MM-R:  {where: null, rerank: true}
+  TXT-0: {where: {modality: text}, rerank: false}
+  TXT-R: {where: {modality: text}, rerank: true}
+
+# Stufe 4: Auswertung
+report:
+  bootstrap_resamples: 10000
+  alpha: 0.05
+  n_examples: 8

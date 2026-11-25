@@ -1,0 +1,7 @@
+index_snapshot/
+data/smoke/
+runs/smoke/
+results/smoke/
+__pycache__/
+*.log
+*.partial.jsonl

@@ -1,0 +1,2983 @@
+{
+  "meta": {
+    "draft_sha256": "c4805a8521474e78f39679fec80d351d50e899e6f6a5ed4e9f9c73f753d90650",
+    "index_collection_sha256": "62bea44fde01c278870f9ddcc62160c2a41bed4ec980debdd71935a5bfc7ca13",
+    "n": 224,
+    "n_by_type": {
+      "visual": 104,
+      "text": 120
+    },
+    "n_by_subtype": {
+      "visual/scan": 5,
+      "visual/diagram": 23,
+      "visual/figure": 76,
+      "text/-": 120
+    },
+    "n_docs": 75
+  },
+  "questions": [
+    {
+      "id": "q004",
+      "question": "Welche drei spezifischen Akteure werden im Zusammenhang mit der „Hugging Face“-Nennung genannt?",
+      "answer": "Die genannten Akteure sind die „Hugging Face“-Entwickler, die „Hugging Face“-Community und die „Hugging Face“-Agenten.",
+      "doc_id": "26-10_AgentenschwarmOpenAI.pdf",
+      "page": 4,
+      "type": "visual",
+      "subtype": "scan",
+      "gold_pages": [
+        "26-10_AgentenschwarmOpenAI.pdf#4"
+      ],
+      "page_image_path": "data/pages/26-10_AgentenschwarmOpenAI/page-0004.png"
+    },
+    {
+      "id": "q007",
+      "question": "Welche spezifischen Methoden werden im asynchronen Kommunikationsmodell zur Erlangung einer Antwort genannt?",
+      "answer": "Der Sender erhält ggf. bei Gelegenheit eine Antwort oder fragt bei Bedarf nach.",
+      "doc_id": "VS-05-Systemmodelle.pdf",
+      "page": 10,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "VS-05-Systemmodelle.pdf#10"
+      ],
+      "page_image_path": "data/pages/VS-05-Systemmodelle/page-0010.png"
+    },
+    {
+      "id": "q009",
+      "question": "Welche spezifischen Schichten existieren im Client-Modell, die die domain.functions umgeben?",
+      "answer": "Die domain.functions im Client werden von der communication und der web-Schicht umgeben.",
+      "doc_id": "SEI - 05.3 - Entwurf. REST und Spring Boot - Server.pdf",
+      "page": 3,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 05.3 - Entwurf. REST und Spring Boot - Server.pdf#3",
+        "SEI - 05.4 - Entwurf. Spring Boot - Web-Client.pdf#11"
+      ],
+      "page_image_path": "data/pages/SEI - 05.3 - Entwurf. REST und Spring Boot - Server/page-0003.png"
+    },
+    {
+      "id": "q010",
+      "question": "Welche der aufgeführten Aktivitäten erstreckt sich über die längste Zeitspanne in der Darstellung des Phasenmodells?",
+      "answer": "Die Aktivität 'Betrieb/Wartung' erstreckt sich über die längste Zeitspanne.",
+      "doc_id": "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf",
+      "page": 14,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf#14",
+        "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf#15"
+      ],
+      "page_image_path": "data/pages/SEI - 02.1 - Vorgehensmodelle. Grundlagen/page-0014.png"
+    },
+    {
+      "id": "q011",
+      "question": "Welche drei unterschiedlichen Sprechblasen-Symbole sind neben der menschlichen Figur dargestellt?",
+      "answer": "Es sind drei Sprechblasen-Symbole zu sehen: eines mit einem Ausrufezeichen, eines mit \"OI! Deäkac...\" und eines mit einem Ausrufezeichen.",
+      "doc_id": "03 c DialogLLMs.pdf",
+      "page": 3,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "03 c DialogLLMs.pdf#3",
+        "03a Dialog Intro.pdf#11"
+      ],
+      "page_image_path": "data/pages/03 c DialogLLMs/page-0003.png"
+    },
+    {
+      "id": "q017",
+      "question": "Welcher Datensatz weist den höchsten Wert in der Spalte 'importance_d_importance_d' auf, wenn der 'gender' weiblich ist?",
+      "answer": "Der Datensatz mit der Zeilennummer 12 hat den höchsten Wert von 100 in dieser Spalte.",
+      "doc_id": "02 Lernen Daten.pdf",
+      "page": 8,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02 Lernen Daten.pdf#8"
+      ],
+      "page_image_path": "data/pages/02 Lernen Daten/page-0008.png"
+    },
+    {
+      "id": "q019",
+      "question": "Welcher Wert für $x_i$ korrespondiert mit dem $x_i \\cdot y_i$-Wert von 147,6 in der Berechnung der Regressionsgeraden?",
+      "answer": "Der Wert für $x_i$ ist 60.",
+      "doc_id": "Statistik_Blatt4_Loesungen.pdf",
+      "page": 2,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "Statistik_Blatt4_Loesungen.pdf#2"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt4_Loesungen/page-0002.png"
+    },
+    {
+      "id": "q020",
+      "question": "Welche Merkmale sind den Instanzen in Klasse 1 zugeordnet, im Gegensatz zu Klasse 2?",
+      "answer": "Die Instanzen in Klasse 1 bestehen nur aus roten Dreiecken, während die Instanzen in Klasse 2 verschiedene Formen und Farben aufweisen.",
+      "doc_id": "02 Lernen Klassifikation.pdf",
+      "page": 3,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "02 Lernen Klassifikation.pdf#3",
+        "02-d Lernen Evaluation.pdf#12"
+      ],
+      "page_image_path": "data/pages/02 Lernen Klassifikation/page-0003.png"
+    },
+    {
+      "id": "q022",
+      "question": "Welche Komponenten interagieren mit dem LangChain Agent, um eine Antwort zu generieren?",
+      "answer": "Der LangChain Agent interagiert mit der LangChain Neo4j Cypher Chain und der LangChain Neo4j Reviews Vector Chain.",
+      "doc_id": "03 d Dialog RAG.pdf",
+      "page": 6,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "03 d Dialog RAG.pdf#6"
+      ],
+      "page_image_path": "data/pages/03 d Dialog RAG/page-0006.png"
+    },
+    {
+      "id": "q023",
+      "question": "Welcher Wert für die gefragten Mineralien wird im Jahr 2040 prognostiziert, und wie verhalten sich die Werte für Lithium und Seltene Erden in diesem Jahr?",
+      "answer": "Für die gefragten Mineralien wird im Jahr 2040 ein Wert von 1200 prognostiziert. Die Werte für Lithium und Seltene Erden liegen in diesem Jahr bei 1000 bzw. 200.",
+      "doc_id": "ZEIT-Ressourcenverbrauch KI.pdf",
+      "page": 1,
+      "type": "visual",
+      "subtype": "scan",
+      "gold_pages": [
+        "ZEIT-Ressourcenverbrauch KI.pdf#1"
+      ],
+      "page_image_path": "data/pages/ZEIT-Ressourcenverbrauch KI/page-0001.png"
+    },
+    {
+      "id": "q025",
+      "question": "In welcher Phase des Projektverlaufs wird die Aktivität 'codieren' durchgeführt?",
+      "answer": "Die Aktivität 'codieren' findet in der Phase 'Entwurf' statt.",
+      "doc_id": "SEM - 02 - Lösung (Vorgehensmodelle).pdf",
+      "page": 4,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEM - 02 - Lösung (Vorgehensmodelle).pdf#4"
+      ],
+      "page_image_path": "data/pages/SEM - 02 - Lösung (Vorgehensmodelle)/page-0004.png"
+    },
+    {
+      "id": "q026",
+      "question": "Welche Elemente in Layer 3 sind mit der Kennzeichnung \"nicht erlaubte Abhängigkeit\" versehen?",
+      "answer": "Die Elemente in Layer 3, die mit \"nicht erlaubte Abhängigkeit\" gekennzeichnet sind, sind die UseCases.",
+      "doc_id": "SEI - 04 - Übung 4 (Projektmanagement + Java) (1).pdf",
+      "page": 8,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04 - Übung 4 (Projektmanagement + Java) (1).pdf#8"
+      ],
+      "page_image_path": "data/pages/SEI - 04 - Übung 4 (Projektmanagement + Java) (1)/page-0008.png"
+    },
+    {
+      "id": "q027",
+      "question": "Welche Dauer hat die Spezifikation im Prozess Kostenverrechnung, und wann beginnt sie?",
+      "answer": "Die Spezifikation dauert 15,0 Einheiten und beginnt am 01.03.2010.",
+      "doc_id": "00 Einführung.pdf",
+      "page": 21,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "00 Einführung.pdf#21"
+      ],
+      "page_image_path": "data/pages/00 Einführung/page-0021.png"
+    },
+    {
+      "id": "q028",
+      "question": "Welcher Wert für t führt in der dargestellten Dichtefunktion f(t) zu einem Wert von 0,08 auf der y-Achse?",
+      "answer": "Der Wert t liegt ungefähr zwischen 5 und 10, da bei t=10 der Wert kleiner als 0,08 ist und bei t=5 der Wert größer als 0,08 ist.",
+      "doc_id": "Statistik (1).pdf",
+      "page": 115,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "Statistik (1).pdf#115"
+      ],
+      "page_image_path": "data/pages/Statistik (1)/page-0115.png"
+    },
+    {
+      "id": "q031",
+      "question": "Welche Komponenten im UML-Modell interagieren mit dem TaskMapper?",
+      "answer": "Die Komponenten TaskRepository und TaskEntity interagieren mit dem TaskMapper.",
+      "doc_id": "SEI - 02 - Übung 2 (Vorgehensmodelle + java).pdf",
+      "page": 5,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 02 - Übung 2 (Vorgehensmodelle + java).pdf#5"
+      ],
+      "page_image_path": "data/pages/SEI - 02 - Übung 2 (Vorgehensmodelle + java)/page-0005.png"
+    },
+    {
+      "id": "q032",
+      "question": "Welche drei Aufgaben sind im Backlog für das Demo-Projekt 2026 sichtbar und wie ist deren geschätzter Aufwand angegeben?",
+      "answer": "Die sichtbaren Aufgaben sind DP2-5 Eine User Story, DP2-6 Eine zweite User Story und DP2-8 Eine Technical Story. Der Aufwand ist jeweils mit 1h, 0Min und 0Min angegeben.",
+      "doc_id": "SEI - 04.4 - Projektmanagement. Jira 2026.pdf",
+      "page": 25,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.4 - Projektmanagement. Jira 2026.pdf#25"
+      ],
+      "page_image_path": "data/pages/SEI - 04.4 - Projektmanagement. Jira 2026/page-0025.png"
+    },
+    {
+      "id": "q033",
+      "question": "Welche Optionen sind im Dialogfenster „New Maven Project“ zur Auswahl, um den Archetyp-Schritt zu überspringen?",
+      "answer": "Es gibt die Option „Create a simple project (skip archetype selection)“ und die Option „Use default Workspace location“.",
+      "doc_id": "SEI - 07.2 - Implementierung. Werkzeuge.pdf",
+      "page": 11,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 07.2 - Implementierung. Werkzeuge.pdf#11"
+      ],
+      "page_image_path": "data/pages/SEI - 07.2 - Implementierung. Werkzeuge/page-0011.png"
+    },
+    {
+      "id": "q034",
+      "question": "Welche Stories sind aktuell im Zustand \"In Arbeit\" und welche sind im Zustand \"Fertig\"?",
+      "answer": "Im Zustand \"In Arbeit\" befinden sich die Technical Story 2 (Datenbank) und die User Story 1 (Aufgabe anlegen). Im Zustand \"Fertig\" ist die Technical Story 1 (Entwicklungsumgebung).",
+      "doc_id": "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf",
+      "page": 11,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf#11"
+      ],
+      "page_image_path": "data/pages/SEI - 04.2 - Projektmanagement. Agiles Managment/page-0011.png"
+    },
+    {
+      "id": "q036",
+      "question": "Welche Attribute besitzt die Klasse Kreditkarte, die mit der Bezeichnung 'Ablaufdatum' versehen ist?",
+      "answer": "Die Klasse Kreditkarte besitzt das Attribut 'Ablaufdatum'.",
+      "doc_id": "Blatt2.pdf",
+      "page": 1,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "Blatt2.pdf#1"
+      ],
+      "page_image_path": "data/pages/Blatt2/page-0001.png"
+    },
+    {
+      "id": "q037",
+      "question": "Welche spezifischen Pfade werden in den Dialogen für die lokale Metrik-Installation angezeigt?",
+      "answer": "Die angezeigten Pfade sind 'neering/06 - Qualitätsmanagement/local.metrics_1.3.8.2.zip/' und 'neering/06 - Qualitätsmanagement/local.metrics_1.3.8.2.zip/'.",
+      "doc_id": "SEI - 06 - Übung 6 (Qualitätsmanagement).pdf",
+      "page": 2,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 06 - Übung 6 (Qualitätsmanagement).pdf#2"
+      ],
+      "page_image_path": "data/pages/SEI - 06 - Übung 6 (Qualitätsmanagement)/page-0002.png"
+    },
+    {
+      "id": "q038",
+      "question": "Welche Akteure sind an den Use Cases \"Anmerkung machen\" und \"bieten\" beteiligt?",
+      "answer": "Der Bieter ist an den Use Cases \"Anmerkung machen\" und \"bieten\" beteiligt.",
+      "doc_id": "SEM - 03 - Übung 3 (Use Case - vollständig).pdf",
+      "page": 11,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#11",
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#9"
+      ],
+      "page_image_path": "data/pages/SEM - 03 - Übung 3 (Use Case - vollständig)/page-0011.png"
+    },
+    {
+      "id": "q040",
+      "question": "Welche drei Klassen erben von der abstrakten Klasse Held und welche spezifischen Methoden implementieren sie?",
+      "answer": "Die Klassen Nachtelf und Zwerg erben von Held. Die Methoden sind nicht direkt ersichtlich, da die Implementierung der Methoden in den abgebildeten Codeausschnitten nicht vollständig dargestellt ist.",
+      "doc_id": "VS-03-Threads.pdf",
+      "page": 25,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-03-Threads.pdf#25"
+      ],
+      "page_image_path": "data/pages/VS-03-Threads/page-0025.png"
+    },
+    {
+      "id": "q041",
+      "question": "Welche Art von Medien, die mit Atari in Verbindung stehen, sind in dem abgebildeten Müll zu erkennen?",
+      "answer": "Es sind alte Datenträger und Verpackungen zu sehen, die Atari-Produkte enthalten.",
+      "doc_id": "SEI - 00.2 - Einführung.pdf",
+      "page": 7,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 00.2 - Einführung.pdf#7"
+      ],
+      "page_image_path": "data/pages/SEI - 00.2 - Einführung/page-0007.png"
+    },
+    {
+      "id": "q043",
+      "question": "Welche spezifische Gruppe und Artefakt-ID sind für die Abhängigkeit von Jakarta Servlet angegeben?",
+      "answer": "Die Gruppe ist jakarta.servlet und die Artefakt-ID ist jakarta.servlet-api.",
+      "doc_id": "VS-07-WebServices_Grundlagen.pdf",
+      "page": 21,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-07-WebServices_Grundlagen.pdf#20",
+        "VS-07-WebServices_Grundlagen.pdf#21"
+      ],
+      "page_image_path": "data/pages/VS-07-WebServices_Grundlagen/page-0021.png"
+    },
+    {
+      "id": "q044",
+      "question": "Welche Elemente sind in der Modellsicht unter der Kategorie GUI Klassen aufgeführt?",
+      "answer": "Die GUI Klassen sind in der Modellsicht als ein eigenes Element aufgeführt.",
+      "doc_id": "01 UML.pdf",
+      "page": 18,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "01 UML.pdf#18"
+      ],
+      "page_image_path": "data/pages/01 UML/page-0018.png"
+    },
+    {
+      "id": "q045",
+      "question": "Wie viele Storys sind in der Übersicht von Story 1 bis Story 20 gelistet, und wie hoch ist die Gesamtpunktzahl dieser Storys?",
+      "answer": "Es sind 20 Storys gelistet. Die Gesamtpunktzahl beträgt 48.5.",
+      "doc_id": "SEI - 04.3 - Projektmanagement. Planning Poker 2026.pdf",
+      "page": 20,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.3 - Projektmanagement. Planning Poker 2026.pdf#20"
+      ],
+      "page_image_path": "data/pages/SEI - 04.3 - Projektmanagement. Planning Poker 2026/page-0020.png"
+    },
+    {
+      "id": "q047",
+      "question": "Welcher Knoten im neuronalen Netz hat den Wert 57 und welche Labels sind mit ihm verbunden?",
+      "answer": "Der Knoten mit dem Wert 57 ist mit den Labels 'true' und 'false' verbunden.",
+      "doc_id": "02-02 a Neuronale Netze.pdf",
+      "page": 14,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02-02 a Neuronale Netze.pdf#14"
+      ],
+      "page_image_path": "data/pages/02-02 a Neuronale Netze/page-0014.png"
+    },
+    {
+      "id": "q050",
+      "question": "Welche maximale Durchgangshöhe wird auf dem Schild für den Durchgang Saaltrakt – Museumstrakt angegeben?",
+      "answer": "Die angegebene maximale Durchgangshöhe beträgt 1,8 Meter.",
+      "doc_id": "SEM - 05.1 - Entwurf. Grundlagen.pdf",
+      "page": 11,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEM - 05.1 - Entwurf. Grundlagen.pdf#11"
+      ],
+      "page_image_path": "data/pages/SEM - 05.1 - Entwurf. Grundlagen/page-0011.png"
+    },
+    {
+      "id": "q051",
+      "question": "Welche spezifischen Wörter werden im Beispiel der Wortvorhersage mit einer Wahrscheinlichkeit von 100,00% angezeigt?",
+      "answer": "Das Wort 'planet' wird mit einer Wahrscheinlichkeit von 100,00% angezeigt.",
+      "doc_id": "02-02 b Neuronale Netze Anwendung.pdf",
+      "page": 7,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02-02 b Neuronale Netze Anwendung.pdf#7"
+      ],
+      "page_image_path": "data/pages/02-02 b Neuronale Netze Anwendung/page-0007.png"
+    },
+    {
+      "id": "q052",
+      "question": "Welche spezifische Methode wird im UDPClient-Code verwendet, um die Zeit zu formatieren, und welche Formatzeichenfolge wird dabei genutzt?",
+      "answer": "Die Methode DateFormatter.ofPattern() wird verwendet, und die Formatzeichenfolge ist \"yyyy-MM-dd HH:mm:ss\".",
+      "doc_id": "VS-06-Sockets.pdf",
+      "page": 15,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-06-Sockets.pdf#15"
+      ],
+      "page_image_path": "data/pages/VS-06-Sockets/page-0015.png"
+    },
+    {
+      "id": "q053",
+      "question": "Welche Elemente im gezeigten Petri-Netz sind mit dem zentralen Ort t verbunden, um den Vorbereich zu definieren?",
+      "answer": "Die Elemente, die den Vorbereich(t) definieren, sind die drei Kreise, die durch Pfeile zu t führen.",
+      "doc_id": "02_Petri-Netze.pdf",
+      "page": 5,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02_Petri-Netze.pdf#5"
+      ],
+      "page_image_path": "data/pages/02_Petri-Netze/page-0005.png"
+    },
+    {
+      "id": "q054",
+      "question": "Wie viele Unternehmen definieren Kunden und wie viele definieren Produkte in Bezug auf die Kategorien 'etwa 10' und '50 oder mehr'?",
+      "answer": "Bei Kunden sind 13% und 50% in diesen Kategorien vertreten. Bei Produkten sind 14% und 38% in diesen Kategorien vertreten.",
+      "doc_id": "SEI - 01 - Einführungsaufgabe.pdf",
+      "page": 2,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 01 - Einführungsaufgabe.pdf#2"
+      ],
+      "page_image_path": "data/pages/SEI - 01 - Einführungsaufgabe/page-0002.png"
+    },
+    {
+      "id": "q056",
+      "question": "Welche Elemente im Pool \"Teilprozess\" können eine Bedingung für die Ausführung einer Aufgabe darstellen?",
+      "answer": "Die Elemente, die eine Bedingung darstellen können, sind das Ereignis \"Ereignis-Teilprozess\" und das Ereignis \"Fehler-Endereignis\".",
+      "doc_id": "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf",
+      "page": 15,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf#10",
+        "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf#15"
+      ],
+      "page_image_path": "data/pages/SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2/page-0015.png"
+    },
+    {
+      "id": "q058",
+      "question": "Welche drei Konzepte sind mit \"Modell – klassisch, LLMs\" verbunden?",
+      "answer": "Die Konzepte, die mit \"Modell – klassisch, LLMs\" verbunden sind, sind \"infer: logisches Schließen, Schließen unter Unsicherheit\", \"knowledge: Wissensrepräsentationen\" und \"Algorithmus\".",
+      "doc_id": "01 Einstieg Übersicht.pdf",
+      "page": 7,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "01 Einstieg Übersicht.pdf#3",
+        "01 Einstieg Übersicht.pdf#7",
+        "02 Lernen Daten.pdf#3",
+        "02-d Lernen Evaluation.pdf#3"
+      ],
+      "page_image_path": "data/pages/01 Einstieg Übersicht/page-0007.png"
+    },
+    {
+      "id": "q059",
+      "question": "Welche Formen sind in Klasse 1 dargestellt und welche Formen sind in Klasse 2 dargestellt?",
+      "answer": "In Klasse 1 sind nur rote Dreiecke dargestellt. In Klasse 2 sind ein blaues Quadrat, ein grünes Quadrat und ein roter Kreis abgebildet.",
+      "doc_id": "02-d Lernen Evaluation.pdf",
+      "page": 13,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "02 Lernen Klassifikation.pdf#4",
+        "02 Lernen Klassifikation.pdf#5",
+        "02-d Lernen Evaluation.pdf#13",
+        "02-d Lernen Evaluation.pdf#14"
+      ],
+      "page_image_path": "data/pages/02-d Lernen Evaluation/page-0013.png"
+    },
+    {
+      "id": "q060",
+      "question": "Welche drei Hauptphasen sind in der Prozessdarstellung von der Erfassung bis zur Berichterstattung abgebildet?",
+      "answer": "Die Hauptphasen sind Erfassung, Normierung, Abstimmung, Summierung und Berichterstattung.",
+      "doc_id": "SEM - 01 - Lösung BPMN.pdf",
+      "page": 7,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEM - 01 - Lösung BPMN.pdf#7"
+      ],
+      "page_image_path": "data/pages/SEM - 01 - Lösung BPMN/page-0007.png"
+    },
+    {
+      "id": "q061",
+      "question": "Welche spezifischen Use Cases sind im Model Browser unter der Task-Organizer M1 aufgelistet?",
+      "answer": "Es sind die Use Cases „Aufgaben anzeigen (UC1)“, „Aufgaben sortieren (UC2)“, „Aufgaben filtern (UC3)“, „Aufgabe anlegen (UC4)“, „Aufgabe bearbeiten (UC5)“, „Aufgabe abschließen (UC6)“ und „Aufgabe löschen (UC7)“ sichtbar.",
+      "doc_id": "SEI - 03.2 - Requirements Engineering. Methoden.pdf",
+      "page": 15,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 03.2 - Requirements Engineering. Methoden.pdf#15"
+      ],
+      "page_image_path": "data/pages/SEI - 03.2 - Requirements Engineering. Methoden/page-0015.png"
+    },
+    {
+      "id": "q062",
+      "question": "Welche spezifische Java-Version erfordert, dass der SecurityManager entfernt wurde, da die Stub-Klassen lokal vorhanden sein müssen?",
+      "answer": "Java 24 erfordert, dass der SecurityManager entfernt wurde, da die Stub-Klassen lokal vorhanden sein müssen.",
+      "doc_id": "VS-04-RMI.pdf",
+      "page": 19,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-04-RMI.pdf#19"
+      ],
+      "page_image_path": "data/pages/VS-04-RMI/page-0019.png"
+    },
+    {
+      "id": "q063",
+      "question": "Welche zwei spezifischen Akteure werden im Zusammenhang mit der Diskussion über die „We Just Poisoned Ourselves“ genannt?",
+      "answer": "Die genannten Akteure sind die KI-Agenten und die menschlichen Nutzer.",
+      "doc_id": "26-10_AgentenschwarmOpenAI.pdf",
+      "page": 2,
+      "type": "visual",
+      "subtype": "scan",
+      "gold_pages": [
+        "26-10_AgentenschwarmOpenAI.pdf#2"
+      ],
+      "page_image_path": "data/pages/26-10_AgentenschwarmOpenAI/page-0002.png"
+    },
+    {
+      "id": "q064",
+      "question": "Wie viele Definitionen von \"Produkt\" existieren in dem Unternehmen, wenn man die Kategorien \"etwa 10\" und \"50 oder mehr\" zusammenzählt?",
+      "answer": "Es existieren 14 und 38 Definitionen. Zusammen ergeben diese 52.",
+      "doc_id": "SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen.pdf",
+      "page": 5,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen.pdf#5"
+      ],
+      "page_image_path": "data/pages/SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen/page-0005.png"
+    },
+    {
+      "id": "q065",
+      "question": "Welche drei Elemente werden im Rahmen der Entwicklung im Sprint genannt, die eine feste Länge haben und maximal einen Monat umfassen?",
+      "answer": "Die Entwicklung im Sprint umfasst die feste Länge und die maximale Dauer von einem Monat.",
+      "doc_id": "SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle.pdf",
+      "page": 20,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle.pdf#20"
+      ],
+      "page_image_path": "data/pages/SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle/page-0020.png"
+    },
+    {
+      "id": "q069",
+      "question": "Welche Aussage macht die erste Figur in der ersten Sprechblase bezüglich einer geplanten Expedition in den Dschungel?",
+      "answer": "Sie planen eine Expedition zu einem Teil des Dschungels, wo noch kein Mensch war.",
+      "doc_id": "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf",
+      "page": 18,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf#18"
+      ],
+      "page_image_path": "data/pages/SEI - 02.1 - Vorgehensmodelle. Grundlagen/page-0018.png"
+    },
+    {
+      "id": "q072",
+      "question": "Welche Schichten sind im Client-Modell unterhalb der domain.functions zu finden?",
+      "answer": "Unterhalb der domain.functions befinden sich Layer 1, Layer 2, Layer 6, Layer 7 und Layer 8.",
+      "doc_id": "SEI - 05 - Übung 5 (REST).pdf",
+      "page": 1,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 05 - Übung 5 (REST).pdf#1"
+      ],
+      "page_image_path": "data/pages/SEI - 05 - Übung 5 (REST)/page-0001.png"
+    },
+    {
+      "id": "q076",
+      "question": "Welche Bedingung muss erfüllt sein, damit ein Bild nach der Frage, ob es mehr als 100 Jahre alt ist, als 'ja' bewertet werden kann?",
+      "answer": "Die Frage \"Ist das Bild mehr als 100 Jahre alt?\" ist eine der Entscheidungen, die nach der Frage \"Hast du das Bild selbst erstellt?\" gestellt wird.",
+      "doc_id": "02 Lernen Klassifikation.pdf",
+      "page": 9,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02 Lernen Klassifikation.pdf#9",
+        "02-d Lernen Evaluation.pdf#18"
+      ],
+      "page_image_path": "data/pages/02 Lernen Klassifikation/page-0009.png"
+    },
+    {
+      "id": "q077",
+      "question": "Welche drei Hauptschritte folgen nach der Erstellung der Anforderungsspezifikation durch den Dienstleister?",
+      "answer": "Schritt 3 ist die Erstellung des Angebots durch den Dienstleister, gefolgt von Schritt 4, bei dem Kunde und Dienstleister den Vertrag abschließen.",
+      "doc_id": "SEI - 03.1 - Requirements Engineering. Grundlagen.pdf",
+      "page": 9,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 03.1 - Requirements Engineering. Grundlagen.pdf#9"
+      ],
+      "page_image_path": "data/pages/SEI - 03.1 - Requirements Engineering. Grundlagen/page-0009.png"
+    },
+    {
+      "id": "q078",
+      "question": "Welche Aktivitäten sind in der Phase des Entwerfens im Wasserfallmodell dargestellt?",
+      "answer": "In der Phase Entwerfen sind die Aktivitäten Produktdefinition, Schnittstellenfestlegung und Änderung Prod.def. zu sehen.",
+      "doc_id": "SEM - 02 - Lösung (Vorgehensmodelle).pdf",
+      "page": 3,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEM - 02 - Lösung (Vorgehensmodelle).pdf#3"
+      ],
+      "page_image_path": "data/pages/SEM - 02 - Lösung (Vorgehensmodelle)/page-0003.png"
+    },
+    {
+      "id": "q080",
+      "question": "Welche lateinischen Phrasen beginnen die beiden dargestellten Passagen, die mit „Dominica X. post Pentecost“ betitelt sind?",
+      "answer": "Die linke Seite beginnt mit „Dominica IX. post Pentecost“ und die rechte Seite mit „Dominica X. post Pentecost“.",
+      "doc_id": "00 Einführung.pdf",
+      "page": 19,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "00 Einführung.pdf#19"
+      ],
+      "page_image_path": "data/pages/00 Einführung/page-0019.png"
+    },
+    {
+      "id": "q082",
+      "question": "Welcher Risikowert (Diff) ist für die Problembeschreibung 'Eingeplanter Mitarbeiter (VAL) nicht wie geplant nicht verfügbar – durchgeführt Arbeit in anderen Projekten' nach der Maßnahme angegeben?",
+      "answer": "Der Diff-Wert für diese Problembeschreibung beträgt 0,5.",
+      "doc_id": "SEI - 04.1 - Projektmanagement. Grundlagen.pdf",
+      "page": 21,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.1 - Projektmanagement. Grundlagen.pdf#21"
+      ],
+      "page_image_path": "data/pages/SEI - 04.1 - Projektmanagement. Grundlagen/page-0021.png"
+    },
+    {
+      "id": "q083",
+      "question": "Welche Komponenten interagieren über das Internet mit den VS-Knoten und den anderen Komponenten der verteilten Anwendung?",
+      "answer": "Die VS-Knoten und die andere verteilte Anwendungskomponente interagieren über das Kommunikationsnetz, das das Internet darstellt.",
+      "doc_id": "VS-02-Netzwerkkommunikation.pdf",
+      "page": 3,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-01-Grundlagen.pdf#7",
+        "VS-02-Netzwerkkommunikation.pdf#3"
+      ],
+      "page_image_path": "data/pages/VS-02-Netzwerkkommunikation/page-0003.png"
+    },
+    {
+      "id": "q085",
+      "question": "Welche spezifischen Work Types sind in der gezeigten Scrum-Vorlage definiert?",
+      "answer": "Die definierten Work Types sind Epic, Story, Bug und Task.",
+      "doc_id": "SEI - 04.4 - Projektmanagement. Jira 2026.pdf",
+      "page": 8,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.4 - Projektmanagement. Jira 2026.pdf#8"
+      ],
+      "page_image_path": "data/pages/SEI - 04.4 - Projektmanagement. Jira 2026/page-0008.png"
+    },
+    {
+      "id": "q086",
+      "question": "Welcher Wert wird für die ZIO AWS Core Version 7.38.9.1 im Bereich \"What's New in Maven\" angegeben?",
+      "answer": "Die letzte Veröffentlichung von ZIO AWS Core 7.38.9.1 war am 21. November 2025.",
+      "doc_id": "SEI - 07.2 - Implementierung. Werkzeuge.pdf",
+      "page": 16,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 07.2 - Implementierung. Werkzeuge.pdf#16"
+      ],
+      "page_image_path": "data/pages/SEI - 07.2 - Implementierung. Werkzeuge/page-0016.png"
+    },
+    {
+      "id": "q087",
+      "question": "Welche drei Projektmanagement-Methoden haben laut der Quelle einen Marktanteil von über 100.000 Domains?",
+      "answer": "Jira, Microsoft Project und Kanban haben einen Marktanteil von über 100.000 Domains.",
+      "doc_id": "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf",
+      "page": 12,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf#12"
+      ],
+      "page_image_path": "data/pages/SEI - 04.2 - Projektmanagement. Agiles Managment/page-0012.png"
+    },
+    {
+      "id": "q090",
+      "question": "Wie viele Bilder maximal können einer Auktion zugeordnet werden?",
+      "answer": "Einer Auktion können maximal sechs Bilder zugeordnet werden.",
+      "doc_id": "SEM - 03 - Übung 3 (Use Case - vollständig).pdf",
+      "page": 14,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#14"
+      ],
+      "page_image_path": "data/pages/SEM - 03 - Übung 3 (Use Case - vollständig)/page-0014.png"
+    },
+    {
+      "id": "q092",
+      "question": "Welche spezifischen String-Werte werden in der Methode malGehen(Toilette toilette) in der rechten Codeversion ausgegeben, wenn die Bedingung für die Zyklenprüfung erfüllt ist?",
+      "answer": "Es wird der String \"Aaaaaahhh, das wurde auch Zeit!\\n\" ausgegeben.",
+      "doc_id": "VS-03-Threads.pdf",
+      "page": 29,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-03-Threads.pdf#29"
+      ],
+      "page_image_path": "data/pages/VS-03-Threads/page-0029.png"
+    },
+    {
+      "id": "q093",
+      "question": "Welcher Anteil der US-Bundessoftwareprojekte von 1979 wurde als 'paid, but never delivered' klassifiziert?",
+      "answer": "Der Anteil der Projekte, die bezahlt, aber nie geliefert wurden, beträgt 30%.",
+      "doc_id": "SEI - 00.2 - Einführung.pdf",
+      "page": 6,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 00.2 - Einführung.pdf#6"
+      ],
+      "page_image_path": "data/pages/SEI - 00.2 - Einführung/page-0006.png"
+    },
+    {
+      "id": "q095",
+      "question": "Welche Werte sind den Eigenschaften \"choice\" in den Objekten \"q1\" und \"q2\" zugeordnet?",
+      "answer": "Bei \"q1\" sind die Werte \"10\", \"11\", \"12\" und \"13\" hinterlegt. Bei \"q2\" sind die Werte \"1\", \"2\", \"3\" und \"4\" angegeben.",
+      "doc_id": "VS-07-WebServices_Grundlagen.pdf",
+      "page": 33,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-07-WebServices_Grundlagen.pdf#33"
+      ],
+      "page_image_path": "data/pages/VS-07-WebServices_Grundlagen/page-0033.png"
+    },
+    {
+      "id": "q096",
+      "question": "Welche Aktion folgt nach der Entscheidung, ob ein Ergebnis besser als 5 ist?",
+      "answer": "Nach der Entscheidung, ob das Ergebnis besser als 5 ist, folgt die Aktion \"Noten eintragen\".",
+      "doc_id": "01 UML.pdf",
+      "page": 101,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "01 UML.pdf#101"
+      ],
+      "page_image_path": "data/pages/01 UML/page-0101.png"
+    },
+    {
+      "id": "q097",
+      "question": "Welche spezifische Story, die als 'Pending' gekennzeichnet ist, wird in der gezeigten Task-Liste aufgeführt?",
+      "answer": "Story 11 mit der Beschreibung 'Beschreibung 11' ist als Pending sichtbar.",
+      "doc_id": "SEI - 04.3 - Projektmanagement. Planning Poker 2026.pdf",
+      "page": 19,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.3 - Projektmanagement. Planning Poker 2026.pdf#19"
+      ],
+      "page_image_path": "data/pages/SEI - 04.3 - Projektmanagement. Planning Poker 2026/page-0019.png"
+    },
+    {
+      "id": "q099",
+      "question": "Wie viele Neuronen sind in der Eingabeschicht und wie viele in der Ausgabeschicht des gezeigten neuronalen Netzes dargestellt?",
+      "answer": "Die Eingabeschicht hat sechs Neuronen, und die Ausgabeschicht hat ein Neuron.",
+      "doc_id": "02-02 a Neuronale Netze.pdf",
+      "page": 11,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02-02 a Neuronale Netze.pdf#11"
+      ],
+      "page_image_path": "data/pages/02-02 a Neuronale Netze/page-0011.png"
+    },
+    {
+      "id": "q103",
+      "question": "Welche spezifischen Komponenten sind in der Transformer-Architektur für die Verarbeitung von Input Embeddings und Output Embeddings dargestellt?",
+      "answer": "Die Komponenten sind Input Embedding und Output Embedding. Diese sind jeweils mit den entsprechenden Input- und Output-Daten verbunden.",
+      "doc_id": "02-02 b Neuronale Netze Anwendung.pdf",
+      "page": 4,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02-02 b Neuronale Netze Anwendung.pdf#4"
+      ],
+      "page_image_path": "data/pages/02-02 b Neuronale Netze Anwendung/page-0004.png"
+    },
+    {
+      "id": "q104",
+      "question": "Welche Methode in der Klasse SocketServer wird aufgerufen, um die Verbindung zu einem Client herzustellen?",
+      "answer": "Die Methode listen(int port) wird aufgerufen, um die Verbindung zu einem Client herzustellen.",
+      "doc_id": "VS-06-Sockets.pdf",
+      "page": 9,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-06-Sockets.pdf#9"
+      ],
+      "page_image_path": "data/pages/VS-06-Sockets/page-0009.png"
+    },
+    {
+      "id": "q106",
+      "question": "Welche Geschäftsfunktion ist mit dem IT-System 'Legal Aid CRM' assoziiert?",
+      "answer": "Die Geschäftsfunktion, die mit dem IT-System 'Legal Aid CRM' assoziiert ist, ist die Geschäftsfunktion 'Customer Relations'.",
+      "doc_id": "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf",
+      "page": 9,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf#9"
+      ],
+      "page_image_path": "data/pages/SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2/page-0009.png"
+    },
+    {
+      "id": "q108",
+      "question": "Welcher Wert für die Kategorie 'museums' ist in der Zeile, die mit 7.0 für 'exercise' beginnt, angegeben?",
+      "answer": "Der Wert für 'museums' in dieser Zeile beträgt 8.0.",
+      "doc_id": "02-d Lernen Evaluation.pdf",
+      "page": 8,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02-d Lernen Evaluation.pdf#8"
+      ],
+      "page_image_path": "data/pages/02-d Lernen Evaluation/page-0008.png"
+    },
+    {
+      "id": "q109",
+      "question": "Welche drei verschiedene Akteure sind in dem dargestellten Prozessmodell definiert?",
+      "answer": "Die definierten Akteure sind die Erfassung, die Zentrale, die Vorgeschränte und die Reporting.",
+      "doc_id": "SEM - 01 - Lösung BPMN.pdf",
+      "page": 13,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEM - 01 - Lösung BPMN.pdf#13"
+      ],
+      "page_image_path": "data/pages/SEM - 01 - Lösung BPMN/page-0013.png"
+    },
+    {
+      "id": "q111",
+      "question": "Welche Buchstabenkombinationen sind in der Mitte des Wortdiagramms zu sehen, die sich um die Buchstaben 'E' und 'N' gruppieren?",
+      "answer": "In der Mitte sind die Buchstabenkombinationen 'REHTO' und 'TNEGA' zu erkennen.",
+      "doc_id": "26-10_AgentenschwarmOpenAI.pdf",
+      "page": 3,
+      "type": "visual",
+      "subtype": "scan",
+      "gold_pages": [
+        "26-10_AgentenschwarmOpenAI.pdf#3"
+      ],
+      "page_image_path": "data/pages/26-10_AgentenschwarmOpenAI/page-0003.png"
+    },
+    {
+      "id": "q112",
+      "question": "Welche drei Komponenten unterstützen oder führen den Geschäftsprozess aus?",
+      "answer": "Die Komponenten sind die Ablauf-organisation, die Aufbau-organisation und die Informationstechnologien.",
+      "doc_id": "SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen.pdf",
+      "page": 10,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen.pdf#10"
+      ],
+      "page_image_path": "data/pages/SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen/page-0010.png"
+    },
+    {
+      "id": "q113",
+      "question": "Welche Testphase ist direkt mit der Modulspezifikation verbunden?",
+      "answer": "Der Modultest ist mit der Modulspezifikation verbunden.",
+      "doc_id": "SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle.pdf",
+      "page": 3,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle.pdf#3"
+      ],
+      "page_image_path": "data/pages/SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle/page-0003.png"
+    },
+    {
+      "id": "q114",
+      "question": "Welche Schritte beschreiben die Übermittlung der Nachricht im RPC-Interaktionsmodell?",
+      "answer": "Die Nachricht wird über das Netzwerk gesendet, und der Server-Betriebssystem gibt die Nachricht an den Server-Stub weiter.",
+      "doc_id": "VS-05-Systemmodelle.pdf",
+      "page": 13,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-05-Systemmodelle.pdf#13"
+      ],
+      "page_image_path": "data/pages/VS-05-Systemmodelle/page-0013.png"
+    },
+    {
+      "id": "q115",
+      "question": "Welche HTTP-Statuscodes werden im gezeigten Java-Servlet-Code zur Antwortsetzung verwendet?",
+      "answer": "Es wird der Statuscode 200 verwendet, der durch HttpServletResponse.SC_OK repräsentiert wird.",
+      "doc_id": "VS-07a-WebServices_REST.pdf",
+      "page": 14,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-07a-WebServices_REST.pdf#14"
+      ],
+      "page_image_path": "data/pages/VS-07a-WebServices_REST/page-0014.png"
+    },
+    {
+      "id": "q118",
+      "question": "Was sagt der Qualitätsmanager in der Sprechblase über seine Rolle im Projekt?",
+      "answer": "Der Qualitätsmanager ist der Freund und Helfer des Projekts.",
+      "doc_id": "SEI - 06.1 - Qualitätsmanagement. Grundlagen.pdf",
+      "page": 11,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 06.1 - Qualitätsmanagement. Grundlagen.pdf#11"
+      ],
+      "page_image_path": "data/pages/SEI - 06.1 - Qualitätsmanagement. Grundlagen/page-0011.png"
+    },
+    {
+      "id": "q122",
+      "question": "Wie verhalten sich die relativen Fehlerbehebungskosten eines Anforderungsfehlers, wenn dieser im Entwurfsstadium im Vergleich zum Betriebsstadium entdeckt wird?",
+      "answer": "Die relativen Fehlerbehebungskosten steigen von der frühen Entdeckung im Entwurf bis zur späten Entdeckung im Betrieb an.",
+      "doc_id": "SEI - 03.1 - Requirements Engineering. Grundlagen.pdf",
+      "page": 7,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEI - 03.1 - Requirements Engineering. Grundlagen.pdf#7"
+      ],
+      "page_image_path": "data/pages/SEI - 03.1 - Requirements Engineering. Grundlagen/page-0007.png"
+    },
+    {
+      "id": "q126",
+      "question": "Was sagt die Figur in der roten Robe zu den anderen Figuren, die sie als dumm bezeichnet?",
+      "answer": "Sie sagt: „Sie sind alle so dumm, und ich bin ihr Chef!“",
+      "doc_id": "SEI - 04.1 - Projektmanagement. Grundlagen.pdf",
+      "page": 24,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.1 - Projektmanagement. Grundlagen.pdf#24"
+      ],
+      "page_image_path": "data/pages/SEI - 04.1 - Projektmanagement. Grundlagen/page-0024.png"
+    },
+    {
+      "id": "q127",
+      "question": "Welche Protokolle werden in der Transportschicht genannt, die für die Zuverlässigkeit der Datenübertragung zuständig sind?",
+      "answer": "TCP und UDP werden in der Transportschicht genannt.",
+      "doc_id": "VS-02-Netzwerkkommunikation.pdf",
+      "page": 9,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "VS-02-Netzwerkkommunikation.pdf#9"
+      ],
+      "page_image_path": "data/pages/VS-02-Netzwerkkommunikation/page-0009.png"
+    },
+    {
+      "id": "q129",
+      "question": "Welche spezifische Aufgabe ist im Jira-Workflow unter der Bezeichnung DP2-5 zu sehen?",
+      "answer": "Die Aufgabe DP2-5 ist eine User Story. Sie ist im Bereich 'Backlog' sichtbar.",
+      "doc_id": "SEI - 04.4 - Projektmanagement. Jira 2026.pdf",
+      "page": 19,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.4 - Projektmanagement. Jira 2026.pdf#19"
+      ],
+      "page_image_path": "data/pages/SEI - 04.4 - Projektmanagement. Jira 2026/page-0019.png"
+    },
+    {
+      "id": "q131",
+      "question": "Welche drei Elemente (Rolle, Ereignis, Artefakt) sind am rechten Rand des Diagramms aufgelistet?",
+      "answer": "Die aufgelisteten Elemente sind Rolle, Ereignis und Ziel.",
+      "doc_id": "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf",
+      "page": 4,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf#4"
+      ],
+      "page_image_path": "data/pages/SEI - 04.2 - Projektmanagement. Agiles Managment/page-0004.png"
+    },
+    {
+      "id": "q133",
+      "question": "Welche spezifische Beziehung zwischen der Aktivität „Auktion durchführen“ und der Aktivität „bieten“ ist durch einen Pfeil mit der Kennzeichnung „includes“ dargestellt?",
+      "answer": "Die Aktivität „Auktion durchführen“ beinhaltet die Aktivität „bieten“.",
+      "doc_id": "SEM - 03 - Übung 3 (Use Case - vollständig).pdf",
+      "page": 13,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#13"
+      ],
+      "page_image_path": "data/pages/SEM - 03 - Übung 3 (Use Case - vollständig)/page-0013.png"
+    },
+    {
+      "id": "q135",
+      "question": "Welche Methoden werden in der `run()` Methode des `ZwergThread` aufgerufen, um die Interrupted-Zustände zu prüfen?",
+      "answer": "Die Methode ruft `Thread.currentThread().isInterrupted()` auf, um zu prüfen, ob der Thread unterbrochen wurde.",
+      "doc_id": "VS-03-Threads.pdf",
+      "page": 27,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-03-Threads.pdf#27"
+      ],
+      "page_image_path": "data/pages/VS-03-Threads/page-0027.png"
+    },
+    {
+      "id": "q136",
+      "question": "Welche spezifische Tätigkeit wird auf dem abgebildeten Strommast durch die Person ausgeführt?",
+      "answer": "Die Person ist dabei, an den Leitungen des Strommastes zu arbeiten.",
+      "doc_id": "SEI - 00.2 - Einführung.pdf",
+      "page": 11,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 00.2 - Einführung.pdf#11"
+      ],
+      "page_image_path": "data/pages/SEI - 00.2 - Einführung/page-0011.png"
+    },
+    {
+      "id": "q137",
+      "question": "Welche HTTP-Methode und welche URL werden im Postman-Test für den Webservice verwendet?",
+      "answer": "Die verwendete HTTP-Methode ist GET und die URL lautet http://localhost:8080/hello-servlet/hello.",
+      "doc_id": "VS-07-WebServices_Grundlagen.pdf",
+      "page": 24,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-07-WebServices_Grundlagen.pdf#24"
+      ],
+      "page_image_path": "data/pages/VS-07-WebServices_Grundlagen/page-0024.png"
+    },
+    {
+      "id": "q138",
+      "question": "Welche Objekte sind in der dargestellten Reihenfolge an den Schritten 4 und 6 beteiligt?",
+      "answer": "Schritt 4 involviert die Fahrkarte und die Person. Schritt 6 involviert die Person und die Kreditkarte.",
+      "doc_id": "01 UML.pdf",
+      "page": 100,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "01 UML.pdf#100",
+        "01 UML.pdf#27",
+        "01 UML.pdf#28",
+        "01 UML.pdf#95",
+        "01 UML.pdf#96",
+        "01 UML.pdf#97",
+        "01 UML.pdf#98"
+      ],
+      "page_image_path": "data/pages/01 UML/page-0100.png"
+    },
+    {
+      "id": "q139",
+      "question": "Welche Optionen gibt es bei der Konfiguration der Story-Punkte in der gezeigten Benutzeroberfläche?",
+      "answer": "Die verfügbaren Optionen für Story Points sind 0.5, 1, 2, 4, 8, 16, 24, 32, 48, ?, und Kaffee.",
+      "doc_id": "SEI - 04.3 - Projektmanagement. Planning Poker 2026.pdf",
+      "page": 8,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.3 - Projektmanagement. Planning Poker 2026.pdf#8"
+      ],
+      "page_image_path": "data/pages/SEI - 04.3 - Projektmanagement. Planning Poker 2026/page-0008.png"
+    },
+    {
+      "id": "q140",
+      "question": "Welcher Wert für die Metrik 'McCabe Cyclomatic Complexity (avg/max)' ist für die Klasse 'o1.organizer.model/src/assembly/SampleApplication.java' angegeben?",
+      "answer": "Der Wert beträgt 3. Die maximale Komplexität ist 1,309.",
+      "doc_id": "SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken.pdf",
+      "page": 32,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken.pdf#32"
+      ],
+      "page_image_path": "data/pages/SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken/page-0032.png"
+    },
+    {
+      "id": "q141",
+      "question": "Welche Gewichte sind den Eingabewerten 3, 3, 0, 3, 5, 5 und 5 zugeordnet, die in die Berechnung des Neurons mit dem Bias b=55 einfließen?",
+      "answer": "Die Gewichte sind W=1, W=2, W=2, W=2, W=1, W=1, W=1.",
+      "doc_id": "02-02 a Neuronale Netze.pdf",
+      "page": 13,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02-02 a Neuronale Netze.pdf#13"
+      ],
+      "page_image_path": "data/pages/02-02 a Neuronale Netze/page-0013.png"
+    },
+    {
+      "id": "q142",
+      "question": "Welche Elemente sind im Browserfenster unterhalb der HTML-Struktur sichtbar und welche Funktion haben sie?",
+      "answer": "Im Browser sind die Navigationsleiste, die Adresszeile und die Steuerelemente wie Pfeile, das Aktualisierungssymbol und das Menü sichtbar. Diese Elemente dienen der Steuerung der angezeigten Webseite.",
+      "doc_id": "SEI - 05.4 - Entwurf. Spring Boot - Web-Client.pdf",
+      "page": 6,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 05.4 - Entwurf. Spring Boot - Web-Client.pdf#6"
+      ],
+      "page_image_path": "data/pages/SEI - 05.4 - Entwurf. Spring Boot - Web-Client/page-0006.png"
+    },
+    {
+      "id": "q143",
+      "question": "Welche drei Ebenen bilden die Struktur von Verteilten Anwendungen, beginnend mit der obersten Ebene?",
+      "answer": "Die Ebenen sind Verteilte Anwendung, VS-Knoten und Kommunikationsnetz.",
+      "doc_id": "VS-01-Grundlagen.pdf",
+      "page": 6,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "VS-01-Grundlagen.pdf#6"
+      ],
+      "page_image_path": "data/pages/VS-01-Grundlagen/page-0006.png"
+    },
+    {
+      "id": "q145",
+      "question": "Welche Richtung ist für den DatagramSocket im Hinblick auf die Kommunikation angegeben?",
+      "answer": "Der DatagramSocket kann sowohl ausgehend als auch hereinkommend kommunizieren.",
+      "doc_id": "VS-06-Sockets.pdf",
+      "page": 17,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-06-Sockets.pdf#17"
+      ],
+      "page_image_path": "data/pages/VS-06-Sockets/page-0017.png"
+    },
+    {
+      "id": "q147",
+      "question": "Welche Aktivitäten sind im Prozessmodell unter der Rolle 'Dienstleister' dargestellt, bevor die Verfügbarkeit geprüft wird?",
+      "answer": "Die Aktivitäten 'Auftrags-eingang' und 'Verfügbarkeit prüfen' sind unter der Rolle 'Dienstleister' sichtbar.",
+      "doc_id": "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf",
+      "page": 18,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf#18"
+      ],
+      "page_image_path": "data/pages/SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2/page-0018.png"
+    },
+    {
+      "id": "q148",
+      "question": "Bei welcher Studiendauer erreicht die relative Häufigkeit der Studierenden ohne Prädikatsexamen ihren höchsten Wert?",
+      "answer": "Die höchste relative Häufigkeit für Studierende ohne Prädikatsexamen wird bei einer Studiendauer von 13 erreicht.",
+      "doc_id": "Statistik_Blatt2_Loesungen (1).pdf",
+      "page": 5,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "Statistik_Blatt2_Loesungen (1).pdf#5"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt2_Loesungen (1)/page-0005.png"
+    },
+    {
+      "id": "q150",
+      "question": "Welche Buchstabenkombinationen sind in der oberen Darstellung neben den Vokalen E, O und A zu sehen?",
+      "answer": "Neben den Vokalen E, O und A sind die Buchstaben D, W, Y und V zu erkennen.",
+      "doc_id": "26-10_AgentenschwarmOpenAI.pdf",
+      "page": 1,
+      "type": "visual",
+      "subtype": "scan",
+      "gold_pages": [
+        "26-10_AgentenschwarmOpenAI.pdf#1"
+      ],
+      "page_image_path": "data/pages/26-10_AgentenschwarmOpenAI/page-0001.png"
+    },
+    {
+      "id": "q153",
+      "question": "Welche Basis-URL wird für alle REST-Endpunkte in der gezeigten JAX RS Anwendung definiert?",
+      "answer": "Die Basis-URL für alle REST-Endpunkte ist \"/api\", was durch die Annotation @ApplicationPath(\"/api\") festgelegt wird.",
+      "doc_id": "VS-07a-WebServices_REST.pdf",
+      "page": 18,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-07a-WebServices_REST.pdf#18"
+      ],
+      "page_image_path": "data/pages/VS-07a-WebServices_REST/page-0018.png"
+    },
+    {
+      "id": "q155",
+      "question": "Welcher Name und welche Produktreferenz sind dem abgebildeten Prototyp zugeordnet?",
+      "answer": "Der Prototyp heißt Flatout Frankie und die Produktreferenz ist „Little Racer“.",
+      "doc_id": "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf",
+      "page": 21,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf#21"
+      ],
+      "page_image_path": "data/pages/SEI - 02.1 - Vorgehensmodelle. Grundlagen/page-0021.png"
+    },
+    {
+      "id": "q160",
+      "question": "Welche Art von Verkehrsmittel ist in dem modernen Bahnhofsinneren zu sehen?",
+      "answer": "Es ist ein Hochgeschwindigkeitszug zu sehen, der in den Bahnsteig einfährt.",
+      "doc_id": "00 Einführung.pdf",
+      "page": 14,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "00 Einführung.pdf#14"
+      ],
+      "page_image_path": "data/pages/00 Einführung/page-0014.png"
+    },
+    {
+      "id": "q165",
+      "question": "Welche Optionen sind unter den Funktionen für die Projektverwaltung in der Jira-Ansicht sichtbar?",
+      "answer": "Die sichtbaren Optionen sind Details, Zugriff, Benachrichtigungen, Automatisierung, Felder, Vorgangstypen, Funktionen, Zeitleiste, Toolkette und Apps.",
+      "doc_id": "SEI - 04.4 - Projektmanagement. Jira 2026.pdf",
+      "page": 12,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.4 - Projektmanagement. Jira 2026.pdf#12"
+      ],
+      "page_image_path": "data/pages/SEI - 04.4 - Projektmanagement. Jira 2026/page-0012.png"
+    },
+    {
+      "id": "q166",
+      "question": "Welche Methode in der 'Hotspots'-Liste verbraucht 123.411 ms CPU-Zeit und hat eine Gesamtdauer von 123.411 ms?",
+      "answer": "Die Methode ist 'ausfuehrung.Normalmodell.copyZufallsdreieck'.",
+      "doc_id": "SEI - 07.2 - Implementierung. Werkzeuge.pdf",
+      "page": 8,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 07.2 - Implementierung. Werkzeuge.pdf#8"
+      ],
+      "page_image_path": "data/pages/SEI - 07.2 - Implementierung. Werkzeuge/page-0008.png"
+    },
+    {
+      "id": "q167",
+      "question": "Welche spezifischen Epics und User Stories sind im gezeigten Jira Board sichtbar?",
+      "answer": "Es sind die User Stories \"Zweite User Story\" und \"Erste User Story\" sichtbar.",
+      "doc_id": "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf",
+      "page": 14,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf#14"
+      ],
+      "page_image_path": "data/pages/SEI - 04.2 - Projektmanagement. Agiles Managment/page-0014.png"
+    },
+    {
+      "id": "q169",
+      "question": "Welche Komponenten in Layer 4 nutzen die Schnittstelle TaskService aus Layer 2?",
+      "answer": "Die Komponenten Organizer View und Organizer Dialog in Layer 4 nutzen die Schnittstelle TaskService.",
+      "doc_id": "SEI - 05.2 - Entwurf. Architekturmuster.pdf",
+      "page": 20,
+      "type": "visual",
+      "subtype": "diagram",
+      "gold_pages": [
+        "SEI - 05.2 - Entwurf. Architekturmuster.pdf#20"
+      ],
+      "page_image_path": "data/pages/SEI - 05.2 - Entwurf. Architekturmuster/page-0020.png"
+    },
+    {
+      "id": "q170",
+      "question": "Welche spezifischen Thread-IDs sind in der Liste der Thread-Status-Anzeige für Thread-0 und Thread-1 zu sehen?",
+      "answer": "Für Thread-0 sind die IDs 8, 10, 12, 14, 16, 18 und 20 sichtbar. Für Thread-1 sind die IDs 1, 3, 5, 7, 9, 11, 13, 15, 17 und 19 sichtbar.",
+      "doc_id": "VS-03-Threads.pdf",
+      "page": 14,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-03-Threads.pdf#14"
+      ],
+      "page_image_path": "data/pages/VS-03-Threads/page-0014.png"
+    },
+    {
+      "id": "q171",
+      "question": "Welche Tätigkeit wird im Zusammenhang mit dem Computer dargestellt, die Fehler in der Software aufdeckt?",
+      "answer": "Debugging, also das Finden von Fehlern in der Software, wird gezeigt, da der Computer die Aufgaben des Kunden erledigt, obwohl er Fehler hat.",
+      "doc_id": "SEI - 00.2 - Einführung.pdf",
+      "page": 5,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 00.2 - Einführung.pdf#5"
+      ],
+      "page_image_path": "data/pages/SEI - 00.2 - Einführung/page-0005.png"
+    },
+    {
+      "id": "q172",
+      "question": "Welche spezifische Nachricht, die im SOAP-Request verwendet wird, enthält den Namen \"Anna\" und die Nachricht \"Tolle Website!\"?",
+      "answer": "Die Nachricht, die diese Informationen enthält, ist die <gs:AddEntryRequest>.",
+      "doc_id": "VS-07-WebServices_Grundlagen.pdf",
+      "page": 36,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-07-WebServices_Grundlagen.pdf#36"
+      ],
+      "page_image_path": "data/pages/VS-07-WebServices_Grundlagen/page-0036.png"
+    },
+    {
+      "id": "q173",
+      "question": "Welche Aktivitäten sind im Prozessmodell nach der 'Evaluate Readiness' zu finden, bevor die 'Prepare Documents' ausgeführt wird?",
+      "answer": "Nach der 'Evaluate Readiness' folgen die Aktivitäten 'Apply Findings' und 'Evaluate Search'.",
+      "doc_id": "01 UML.pdf",
+      "page": 34,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "01 UML.pdf#34"
+      ],
+      "page_image_path": "data/pages/01 UML/page-0034.png"
+    },
+    {
+      "id": "q174",
+      "question": "Welche Stories sind in der Ansicht 'Pending' sichtbar und welche sind in der Ansicht 'Finished'?",
+      "answer": "In der Ansicht 'Pending' sind Story 11, Story 12, Story 13 und Story 14 sichtbar. Es sind keine Stories in der Ansicht 'Finished' sichtbar.",
+      "doc_id": "SEI - 04.3 - Projektmanagement. Planning Poker 2026.pdf",
+      "page": 17,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 04.3 - Projektmanagement. Planning Poker 2026.pdf#17"
+      ],
+      "page_image_path": "data/pages/SEI - 04.3 - Projektmanagement. Planning Poker 2026/page-0017.png"
+    },
+    {
+      "id": "q175",
+      "question": "Welche Schweregrade wurden für die Befunde 28/Methode, 45/Methode und 72/Ausnahme vergeben?",
+      "answer": "Für 28/Methode wurde ein Gewicht von 2 vergeben, für 45/Methode ein Gewicht von 1 und für 72/Ausnahme ein Gewicht von 3.",
+      "doc_id": "SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken.pdf",
+      "page": 9,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken.pdf#9"
+      ],
+      "page_image_path": "data/pages/SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken/page-0009.png"
+    },
+    {
+      "id": "q176",
+      "question": "Wie viele Male kommt das Wort \"AND\" in dem Text vor, der zur Erstellung der Eingaberepräsentation verwendet wurde?",
+      "answer": "Das Wort \"AND\" kommt 2 Mal in dem Text vor.",
+      "doc_id": "02-02 a Neuronale Netze.pdf",
+      "page": 12,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "02-02 a Neuronale Netze.pdf#12"
+      ],
+      "page_image_path": "data/pages/02-02 a Neuronale Netze/page-0012.png"
+    },
+    {
+      "id": "q180",
+      "question": "Welche Methode wird in der Klasse SocketClient verwendet, um die Verbindung zu einem Client zu senden?",
+      "answer": "Die Methode sendRequest wird verwendet, um die Anfrage zu senden.",
+      "doc_id": "VS-06-Sockets.pdf",
+      "page": 7,
+      "type": "visual",
+      "subtype": "figure",
+      "gold_pages": [
+        "VS-06-Sockets.pdf#7"
+      ],
+      "page_image_path": "data/pages/VS-06-Sockets/page-0007.png"
+    },
+    {
+      "id": "q181",
+      "question": "Wie viele fünfstellige Telefonnummern existieren, wenn weder die Ziffern 0 noch 8 verwendet werden dürfen?",
+      "answer": "Es gibt insgesamt 85 verschiedene Telefonnummern, da jede Ziffer die Werte 1-7 oder 9 annehmen kann.",
+      "doc_id": "Statistik_Blatt6_Loesungen.pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt6.pdf#1",
+        "Statistik_Blatt6_Loesungen.pdf#2",
+        "Statistik_Blatt6_Loesungen.pdf#7"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt6_Loesungen/page-0002.png"
+    },
+    {
+      "id": "q182",
+      "question": "Welche Werte für die empirische Standardabweichung und die empirische Varianz sind bei der Analyse der 20 Wertepaare angegeben?",
+      "answer": "Die empirische Standardabweichung beträgt $s_x = 1,6$ und die empirische Varianz beträgt $s_y^2 = 4,0$.",
+      "doc_id": "Statistik_Blatt4.pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt4.pdf#3",
+        "Statistik_Blatt4_Loesungen.pdf#9"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt4/page-0003.png"
+    },
+    {
+      "id": "q183",
+      "question": "Wie hoch ist die Wahrscheinlichkeit, dass ein zufällig ausgewählter Prüfling in genau einem der beiden Fächer Mathematik oder Chemie durchgefallen ist?",
+      "answer": "Die Wahrscheinlichkeit, dass der Prüfling in genau einem Fach durchgefallen ist, beträgt 0,2.",
+      "doc_id": "Statistik_Blatt5_Loesungen.pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt5_Loesungen.pdf#2"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt5_Loesungen/page-0002.png"
+    },
+    {
+      "id": "q184",
+      "question": "Welche Merkmale wurden bei der Erfassung der wirtschaftlichen Situation von Mitarbeitern befragt, die in der Planung von Parkplätzen und Bussen relevant sind?",
+      "answer": "Die befragten Merkmale umfassten die Haushaltsgröße, die monatliche Miete, das Beförderungsmittel, die Entfernung zur Arbeitsstätte und die eigene Einschätzung der wirtschaftlichen Lage.",
+      "doc_id": "Statistik_Blatt1 (1).pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt1 (1).pdf#1",
+        "Statistik_Blatt1_Loesungen (1).pdf#1",
+        "Statistik_Blatt1_Loesungen (1).pdf#3"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt1 (1)/page-0001.png"
+    },
+    {
+      "id": "q185",
+      "question": "Welche Methoden zur Informationsgewinnung werden unter der Kategorie 'Modellbasiert' bei der Hochschule für Technik Stuttgart aufgeführt?",
+      "answer": "Modellbasierte Ansätze umfassen Wissensbasen, überwachtes und unüberwachtes Maschinelles Lernen sowie Sprachmodelle.",
+      "doc_id": "01 Einstieg Übersicht.pdf",
+      "page": 5,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "01 Einstieg Übersicht.pdf#5"
+      ],
+      "page_image_path": "data/pages/01 Einstieg Übersicht/page-0005.png"
+    },
+    {
+      "id": "q186",
+      "question": "Was bedeutet der Zustand 'Deadlockfrei' im Kontext der Software-Modellierung?",
+      "answer": "Deadlockfrei bedeutet, dass jede erreichbare Markierung mindestens eine Transition aktiviert hat.",
+      "doc_id": "02_Petri-Netze.pdf",
+      "page": 14,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02_Petri-Netze.pdf#14"
+      ],
+      "page_image_path": "data/pages/02_Petri-Netze/page-0014.png"
+    },
+    {
+      "id": "q187",
+      "question": "Welche Spezifikationen bezüglich der Systemleistung für die gleichzeitige Nutzung und die Antwortzeiten bei unterschiedlicher Benutzeranzahl sind im Abschnitt der nicht-funktionalen Anforderungen genannt?",
+      "answer": "Das System muss bis zu 1000 Anwender gleichzeitig unterstützen. Bei maximaler Benutzerzahl soll die Antwortzeit 1 Sekunde nicht überschreiten, bei darüber hinausgehenden Nutzern maximal 10 Sekunden, woraufhin eine Überlastungsmeldung erscheinen muss.",
+      "doc_id": "SEM - 03 - Übung 3 (Use Case - vollständig).pdf",
+      "page": 7,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#4",
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#7"
+      ],
+      "page_image_path": "data/pages/SEM - 03 - Übung 3 (Use Case - vollständig)/page-0007.png"
+    },
+    {
+      "id": "q188",
+      "question": "Wie werden Bilder und Texte in Bezug auf die Repräsentation in neuronalen Netzwerken beschrieben?",
+      "answer": "Bilder werden als Pixel dargestellt, wobei pro Pixel ein bis drei Eingabeknoten (für schwarz-weiß oder RGB) verwendet werden. Texte hingegen werden durch (Unter-)Zeichenketten und Embeddings repräsentiert.",
+      "doc_id": "02-02 b Neuronale Netze Anwendung.pdf",
+      "page": 8,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02-02 b Neuronale Netze Anwendung.pdf#8"
+      ],
+      "page_image_path": "data/pages/02-02 b Neuronale Netze Anwendung/page-0008.png"
+    },
+    {
+      "id": "q189",
+      "question": "Welche URLs dienen zur Abfrage des Status und der Aufgabenliste der ServerApplikation?",
+      "answer": "Die Statusmeldung der Applikation wird unter http://localhost:8082/api/v1/ bereitgestellt, während die Liste der Tasks im JSON-Format unter http://localhost:8082/api/v1/tasks zu finden ist.",
+      "doc_id": "SEI - 05 - Übung 5 (REST).pdf",
+      "page": 4,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05 - Übung 5 (REST).pdf#4"
+      ],
+      "page_image_path": "data/pages/SEI - 05 - Übung 5 (REST)/page-0004.png"
+    },
+    {
+      "id": "q190",
+      "question": "Welche Anwendungsbereiche nutzen Protokolle, die keine Verbindung zum Empfänger herstellen, wie zum Beispiel DatagramSocket?",
+      "answer": "Anwendungen, die diese Art von Protokollen verwenden, sind unter anderem die Übermittlung von Börsenkursen, Audioübertragungen und DNS.",
+      "doc_id": "VS-06-Sockets.pdf",
+      "page": 13,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-06-Sockets.pdf#13"
+      ],
+      "page_image_path": "data/pages/VS-06-Sockets/page-0013.png"
+    },
+    {
+      "id": "q191",
+      "question": "Welche spezifischen Aufgabenstellungen gibt es bezüglich der Erweiterung eines ChatBots, der dem Eliza-System nachempfunden ist?",
+      "answer": "Die Aufgabe besteht darin, den ChatBot um einige Adjazenzpaare zu erweitern, sodass er korrekt reagiert, wenn der erste Teil des Paares verwendet wird.",
+      "doc_id": "03 b Aufgaben.pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "03 b Aufgaben.pdf#1"
+      ],
+      "page_image_path": "data/pages/03 b Aufgaben/page-0001.png"
+    },
+    {
+      "id": "q192",
+      "question": "Welche frühe Zielsetzung für die Künstliche Intelligenz wird im Zusammenhang mit der KI-Entwicklung genannt?",
+      "answer": "Die älteste Zieldefinition für die KI ist das Erreichen der Menschenähnlichkeit, was auf das Jahr 1950 datiert wird.",
+      "doc_id": "03a Dialog Intro.pdf",
+      "page": 8,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "03a Dialog Intro.pdf#8"
+      ],
+      "page_image_path": "data/pages/03a Dialog Intro/page-0008.png"
+    },
+    {
+      "id": "q193",
+      "question": "Welche Merkmale kennzeichnen agile Methoden im Vergleich zu traditionellen Vorgehensweisen?",
+      "answer": "Agile Methoden zeichnen sich durch häufiges Feedback und einen iterativen Arbeitsablauf aus. Dabei erfolgt nur eine grobe Planung, gefolgt von abwechselnden kurzen Planungs- und Entwicklungsphasen.",
+      "doc_id": "SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle.pdf",
+      "page": 12,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle.pdf#12"
+      ],
+      "page_image_path": "data/pages/SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle/page-0012.png"
+    },
+    {
+      "id": "q194",
+      "question": "Welche Eigenschaften müssen Datenpunkte aufweisen, wenn die Aufgabe das Klassifizieren von Daten ist?",
+      "answer": "Die Datenpunkte müssen Attribute besitzen und eine Zielklasse haben.",
+      "doc_id": "02 Lernen Daten.pdf",
+      "page": 5,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02 Lernen Daten.pdf#5",
+        "02-d Lernen Evaluation.pdf#5"
+      ],
+      "page_image_path": "data/pages/02 Lernen Daten/page-0005.png"
+    },
+    {
+      "id": "q195",
+      "question": "Welche maximalen Antwortzeiten sind für die Systemleistung bei unterschiedlicher Benutzeranzahl festgelegt?",
+      "answer": "Bei maximaler Benutzerzahl soll die Antwortzeit 1 Sekunde betragen. Bei darüber hinausgehenden Benutzerzahlen soll sich diese auf maximal 10 Sekunden verlängern.",
+      "doc_id": "SEI - 03 - Übung 3 (Requirements Engineering + Java).pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 03 - Übung 3 (Requirements Engineering + Java).pdf#2"
+      ],
+      "page_image_path": "data/pages/SEI - 03 - Übung 3 (Requirements Engineering + Java)/page-0002.png"
+    },
+    {
+      "id": "q196",
+      "question": "Welche Kriterien müssen Anforderungen erfüllen, damit sie für alle Beteiligten klar und überprüfbar sind?",
+      "answer": "Anforderungen müssen präzise, objektiv und für alle verständlich formuliert sein. Zudem ist es wichtig, dass sie aus der tatsächlichen Aufgabe oder dem Anwender ausgehen.",
+      "doc_id": "SEI - 03.1 - Requirements Engineering. Grundlagen.pdf",
+      "page": 13,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 03.1 - Requirements Engineering. Grundlagen.pdf#13"
+      ],
+      "page_image_path": "data/pages/SEI - 03.1 - Requirements Engineering. Grundlagen/page-0013.png"
+    },
+    {
+      "id": "q197",
+      "question": "Welche Wahrscheinlichkeit ergibt sich, dass ein zufällig ausgewählter Prüfling bei einer Prüfung in mindestens einem der beiden Fächer (Mathematik oder Chemie) durchgefallen ist, wenn 25%, 15% und 10% der Prüflinge in Mathematik, Chemie und beiden Fächern durchgefallen sind?",
+      "answer": "Die Wahrscheinlichkeit, dass der Prüfling in mindestens einem der beiden Fächer durchgefallen ist, beträgt 0,40.",
+      "doc_id": "Statistik_Blatt5 (1).pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt5 (1).pdf#1"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt5 (1)/page-0001.png"
+    },
+    {
+      "id": "q198",
+      "question": "Welche spezifischen Anforderungen an die Trainingsdaten werden genannt, wenn man komplexe Lernalgorithmen wie Deep Learning verwendet?",
+      "answer": "Es ist ein großer Datenbedarf notwendig, und die Daten müssen informativ sein, wobei alle Zielklassen ausreichend oft vorkommen und die Instanzen unterschiedlich sein müssen.",
+      "doc_id": "02-d Lernen Evaluation.pdf",
+      "page": 16,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02 Lernen Klassifikation.pdf#6",
+        "02 Lernen Klassifikation.pdf#7",
+        "02-d Lernen Evaluation.pdf#15",
+        "02-d Lernen Evaluation.pdf#16"
+      ],
+      "page_image_path": "data/pages/02-d Lernen Evaluation/page-0016.png"
+    },
+    {
+      "id": "q199",
+      "question": "Welche Tätigkeiten im Requirements Engineering kann Künstliche Intelligenz unterstützen, die die Formulierung von Anforderungen umfassen?",
+      "answer": "KI kann bei der Formulierung, Strukturierung und Vereinheitlichung von Anforderungen helfen.",
+      "doc_id": "SEI - 03.2 - Requirements Engineering. Methoden.pdf",
+      "page": 24,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 03.2 - Requirements Engineering. Methoden.pdf#24"
+      ],
+      "page_image_path": "data/pages/SEI - 03.2 - Requirements Engineering. Methoden/page-0024.png"
+    },
+    {
+      "id": "q200",
+      "question": "Welche Schritte sind notwendig, um in Jira ein Beispielprojekt zu durchlaufen?",
+      "answer": "Die Schritte umfassen das Anlegen von Projekt und Space, das Erstellen eines Epics, das Zuordnen einer User Story zu diesem Epic und das Anlegen einer Technical Story.",
+      "doc_id": "SEI - 04.4 - Projektmanagement. Jira 2026.pdf",
+      "page": 4,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 04.4 - Projektmanagement. Jira 2026.pdf#4"
+      ],
+      "page_image_path": "data/pages/SEI - 04.4 - Projektmanagement. Jira 2026/page-0004.png"
+    },
+    {
+      "id": "q201",
+      "question": "Welche spezifischen Konfigurationsparameter können beim Training eines neuronalen Netzes auf playground.tensorflow.org angepasst werden?",
+      "answer": "Man kann die Optionen für die Lernaufgabe (Klassifikation oder Regression), die Learning Rate und die Aktivierungsfunktion einstellen.",
+      "doc_id": "02-02 a Neuronale Netze Übung.pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02-02 a Neuronale Netze Übung.pdf#1",
+        "02-02 a NeuronaleNetzeLösung.pdf#1"
+      ],
+      "page_image_path": "data/pages/02-02 a Neuronale Netze Übung/page-0001.png"
+    },
+    {
+      "id": "q202",
+      "question": "Welche drei Aspekte bestimmen die Charakterisierung von Anwendungskomponenten in Architekturmodellen?",
+      "answer": "Architekturmodelle charakterisieren Anwendungskomponenten anhand ihrer Rollen, des Kopplungsmodells und der Schichten.",
+      "doc_id": "VS-01-Grundlagen.pdf",
+      "page": 37,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-01-Grundlagen.pdf#37"
+      ],
+      "page_image_path": "data/pages/VS-01-Grundlagen/page-0037.png"
+    },
+    {
+      "id": "q203",
+      "question": "Wie wird die Anzahl der Möglichkeiten berechnet, wenn man aus einer Menge mit n Elementen k Elemente zieht, wobei die Reihenfolge irrelevant ist und die Elemente nicht wiederverwendet werden?",
+      "answer": "Diese Anzahl wird als Co(n, k) bezeichnet. Man erhält Po(n, k), indem man für jede ungeordnete Kombination alle Anordnungen berücksichtigt.",
+      "doc_id": "Statistik (1).pdf",
+      "page": 92,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik (1).pdf#92"
+      ],
+      "page_image_path": "data/pages/Statistik (1)/page-0092.png"
+    },
+    {
+      "id": "q204",
+      "question": "Welche Messwerte der Lebensdauer von Kühlaggregaten sind in der geordneten Messreihe für Aufgabe 1 angegeben?",
+      "answer": "Die Messreihe umfasst 25 Werte, die von 0,05 Jahren bis 11,82 Jahren reichen.",
+      "doc_id": "Statistik_Blatt3 (1).pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt3 (1).pdf#1",
+        "Statistik_Blatt3_Loesungen.pdf#5"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt3 (1)/page-0001.png"
+    },
+    {
+      "id": "q205",
+      "question": "Welche zwei Hauptkomponenten bilden die Architektur des Web-Clients, und welche Funktion erfüllt jede davon?",
+      "answer": "Der REST-Server stellt fachliche Funktionen und Daten über eine REST-API bereit, während der Web-Client diese API nutzt und die Benutzeroberfläche erzeugt.",
+      "doc_id": "SEI - 05.4 - Entwurf. Spring Boot - Web-Client.pdf",
+      "page": 4,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05.4 - Entwurf. Spring Boot - Web-Client.pdf#4"
+      ],
+      "page_image_path": "data/pages/SEI - 05.4 - Entwurf. Spring Boot - Web-Client/page-0004.png"
+    },
+    {
+      "id": "q206",
+      "question": "Welche spezifischen Java-Titel von Christian Ullenboom werden als ergänzende Literatur aufgeführt?",
+      "answer": "Die genannten Bücher sind \"Java ist auch eine Insel\" und \"Java SE 8 Standard-Bibliothek\".",
+      "doc_id": "VS-03-Threads.pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-03-Threads.pdf#2",
+        "VS-07-WebServices_Grundlagen.pdf#2"
+      ],
+      "page_image_path": "data/pages/VS-03-Threads/page-0002.png"
+    },
+    {
+      "id": "q207",
+      "question": "Welche Parameter müssen bei der Anpassung des Lernprozesses in neuronalen Netzwerken optimiert werden, um die gewünschte Aktivierung zu erreichen?",
+      "answer": "Die Verbindungsgewichte und gegebenenfalls die Biases müssen so angepasst werden, dass für jeden Input die korrekte Aktivierung in der letzten Netzwerkschicht entsteht.",
+      "doc_id": "02-02 a Neuronale Netze.pdf",
+      "page": 15,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02-02 a Neuronale Netze.pdf#15"
+      ],
+      "page_image_path": "data/pages/02-02 a Neuronale Netze/page-0015.png"
+    },
+    {
+      "id": "q208",
+      "question": "Welche Projektaspekte, wie die Definition von Teilprodukten oder die Festlegung der Fertigungsstellungszeitpunkte, werden durch ein allgemeines Vorgehensmodell nicht festgelegt?",
+      "answer": "Die Fertigungsstellungszeitpunkte und die Fertigstellungskriterien werden durch ein allgemeines Vorgehensmodell nicht festgelegt.",
+      "doc_id": "SEM - 02 - Lösung (Vorgehensmodelle).pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 02 - Übung 2 (Vorgehensmodelle + java).pdf#1",
+        "SEM - 02 - Lösung (Vorgehensmodelle).pdf#1",
+        "SEM - 02 - Lösung (Vorgehensmodelle).pdf#2"
+      ],
+      "page_image_path": "data/pages/SEM - 02 - Lösung (Vorgehensmodelle)/page-0002.png"
+    },
+    {
+      "id": "q209",
+      "question": "Welche spezifischen Dokumente sind für die Neuanlage von Sparkonten bei minderjährigen Kunden erforderlich?",
+      "answer": "Für die Neuanlage bei minderjährigen Kontoinhabern ist zusätzlich zum ausgefüllten Formular A1 auch das Formular B notwendig.",
+      "doc_id": "Blatt1.pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Blatt1.pdf#1"
+      ],
+      "page_image_path": "data/pages/Blatt1/page-0001.png"
+    },
+    {
+      "id": "q210",
+      "question": "Welche Pflichtangaben müssen Rechnungen enthalten, wenn der Rechnungsabsender eine Bankverbindung hinterlegen muss?",
+      "answer": "Rechnungen benötigen einen Leistungszeitraum, eine eindeutige Rechnungsnummer und ein Rechnungsdatum. Zudem muss der Rechnungsabsender eine Bankverbindung (IBAN) hinterlegt haben.",
+      "doc_id": "Blatt3 (1).pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Blatt3 (1).pdf#2"
+      ],
+      "page_image_path": "data/pages/Blatt3 (1)/page-0002.png"
+    },
+    {
+      "id": "q211",
+      "question": "Welche Aspekte der Systemhistorie müssen bei der Modellierung von IT-Systemen berücksichtigt werden?",
+      "answer": "Die Historie umfasst, ob das System proprietär ist, selbst entwickelt wurde oder ob es sich um konfigurierte Standardsoftware handelt.",
+      "doc_id": "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf",
+      "page": 8,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf#8"
+      ],
+      "page_image_path": "data/pages/SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2/page-0008.png"
+    },
+    {
+      "id": "q212",
+      "question": "Wie ist das Verhältnis von Präsenzzeit zu Selbststudium bei dem Kurs der Hochschule für Technik Stuttgart angegeben?",
+      "answer": "Der Kurs umfasst 3 Stunden Präsenzunterricht und 5 Stunden Selbststudium pro Woche.",
+      "doc_id": "VS-00-Organisation.pdf",
+      "page": 6,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-00-Organisation.pdf#6"
+      ],
+      "page_image_path": "data/pages/VS-00-Organisation/page-0006.png"
+    },
+    {
+      "id": "q213",
+      "question": "Welche Methode dient dazu, alle Aufgaben aus der Datenbank abzurufen, und welche Methode liefert die Anzahl der gespeicherten Aufgaben?",
+      "answer": "Die Methode getTasks() gibt alle Aufgaben zurück, und getNumberOfTasks() gibt die Gesamtzahl der Aufgaben an.",
+      "doc_id": "SEI - 02 - Übung 2 (Vorgehensmodelle + java).pdf",
+      "page": 12,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 02 - Übung 2 (Vorgehensmodelle + java).pdf#12"
+      ],
+      "page_image_path": "data/pages/SEI - 02 - Übung 2 (Vorgehensmodelle + java)/page-0012.png"
+    },
+    {
+      "id": "q214",
+      "question": "Welche Art von Kopplung entsteht zwischen Client und Server in Version 5, und welche Art von Kopplung dominiert innerhalb der einzelnen Anwendungen?",
+      "answer": "Zwischen den Anwendungen entsteht eine neue Protokoll-, Daten- und zeitliche Kopplung durch den expliziten REST-Vertrag. Innerhalb von Client und Server dominieren schmale Schnittstellen und klar abgegrenzte Verantwortungen.",
+      "doc_id": "SEI - 05 - Kopplung und Zusammenhalt von Version 4 zu 5.pdf",
+      "page": 4,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05 - Kopplung und Zusammenhalt von Version 4 zu 5.pdf#4"
+      ],
+      "page_image_path": "data/pages/SEI - 05 - Kopplung und Zusammenhalt von Version 4 zu 5/page-0004.png"
+    },
+    {
+      "id": "q215",
+      "question": "Welche spezifischen Dateiformate müssen für die Abgabe der Aufgaben 1 und der Java-Aufgabe verwendet werden?",
+      "answer": "Die Bearbeitung der Aufgabe 1 muss als PDF-Datei hochgeladen werden, während die Lösung der Java-Aufgabe als ZIP-Datei mit den .java-Dateien eingereicht werden muss.",
+      "doc_id": "SEI - 04 - Übung 4 (Projektmanagement + Java) (1).pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 04 - Übung 4 (Projektmanagement + Java) (1).pdf#1"
+      ],
+      "page_image_path": "data/pages/SEI - 04 - Übung 4 (Projektmanagement + Java) (1)/page-0001.png"
+    },
+    {
+      "id": "q216",
+      "question": "Welche Aktionen lösen im S-Bahnticket-Automaten den Abbruch des gesamten Vorgangs aus?",
+      "answer": "Die Taste „Abbrechen“ oder eine Inaktivität von 20 Sekunden führen in allen Zuständen des Automaten zum Beenden des Vorgangs.",
+      "doc_id": "Blatt4.pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Blatt4.pdf#1"
+      ],
+      "page_image_path": "data/pages/Blatt4/page-0001.png"
+    },
+    {
+      "id": "q217",
+      "question": "Welche drei unterschiedlichen technischen Methoden zur Erstellung künstlicher Intelligenz-Systeme werden in den Leitfragen genannt, wobei eine Methode aus dem Bereich des Lernens stammen muss?",
+      "answer": "Es sollen drei verschiedene technische Ansätze zum Erzeugen künstlich intelligenter Systeme recherchiert werden, wobei einer dieser Ansätze aus dem Bereich des Lernens stammen muss.",
+      "doc_id": "Einstiegsdiskussion KI.pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Einstiegsdiskussion KI.pdf#1"
+      ],
+      "page_image_path": "data/pages/Einstiegsdiskussion KI/page-0001.png"
+    },
+    {
+      "id": "q218",
+      "question": "Was ist das Hauptziel der Clean Architecture im Hinblick auf die Geschäftslogik?",
+      "answer": "Das Ziel ist es, die fachliche Logik unabhängig von den technischen Details zu gestalten.",
+      "doc_id": "SEI - 05.2 - Entwurf. Architekturmuster.pdf",
+      "page": 8,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05.2 - Entwurf. Architekturmuster.pdf#8"
+      ],
+      "page_image_path": "data/pages/SEI - 05.2 - Entwurf. Architekturmuster/page-0008.png"
+    },
+    {
+      "id": "q219",
+      "question": "Wie wird Software Engineering definiert, insbesondere im Hinblick auf die Anwendung von Ingenieurprinzipien auf Software?",
+      "answer": "Software Engineering ist die Anwendung eines systematischen, disziplinierten und quantifizierbaren Ansatzes für die Entwicklung, den Betrieb und die Wartung von Software.",
+      "doc_id": "SEI - 00.2 - Einführung.pdf",
+      "page": 17,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 00.2 - Einführung.pdf#17"
+      ],
+      "page_image_path": "data/pages/SEI - 00.2 - Einführung/page-0017.png"
+    },
+    {
+      "id": "q220",
+      "question": "Wann wird die Methode `bind` im Kontext des Java RMI Registrierungsdienstes verwendet und was passiert, wenn der Name bereits gebunden ist?",
+      "answer": "Die Methode `bind` wird genutzt, um einen Remote-Objekt-Identifikator mit einem Namen zu registrieren. Wenn der Name bereits auf eine Remote-Objekt-Referenz verknüpft ist, wird eine `AlreadyBoundException` ausgelöst.",
+      "doc_id": "VS-04-RMI.pdf",
+      "page": 23,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-04-RMI.pdf#23"
+      ],
+      "page_image_path": "data/pages/VS-04-RMI/page-0023.png"
+    },
+    {
+      "id": "q221",
+      "question": "Welche Wahrscheinlichkeit gibt es, dass ein Produkt, das als einwandfrei gilt, durch einen Kontrolltest als defekt erkannt wird, wenn die Produktionsrate von fehlerhaften Artikeln 10% beträgt?",
+      "answer": "Die Wahrscheinlichkeit, dass ein einwandfreies Produkt den Test passiert, beträgt 0,98. Die Wahrscheinlichkeit, dass ein defektes Produkt als nicht funktionsfähig identifiziert wird, beträgt 0,95.",
+      "doc_id": "Statistik_Blatt7.pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt7.pdf#2"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt7/page-0002.png"
+    },
+    {
+      "id": "q222",
+      "question": "Welche Termine bestimmen den Abschluss der Berichterstattung und die Eintreffung der Daten des Vormonats im monatlichen Prozessablauf?",
+      "answer": "Die Daten des Vormonats müssen bis zum fünften Arbeitstag des aktuellen Monats eingetroffen sein, und die Berichterstattung muss bis zum zehnten Arbeitstag abgeschlossen sein.",
+      "doc_id": "SEI - 01 - Übung 1 (Geschäftsprozessanalyse + Java).pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 01 - Übung 1 (Geschäftsprozessanalyse + Java).pdf#2",
+        "SEM - 01 - Lösung BPMN.pdf#11",
+        "SEM - 01 - Lösung BPMN.pdf#6"
+      ],
+      "page_image_path": "data/pages/SEI - 01 - Übung 1 (Geschäftsprozessanalyse + Java)/page-0002.png"
+    },
+    {
+      "id": "q223",
+      "question": "Wie lautet die Gleichung der empirischen Regressionsgeraden, die aus den berechneten Kennzahlen abgeleitet wurde?",
+      "answer": "Die empirische Regressionsgerade lautet: y = 5.5193x + 0.4110.",
+      "doc_id": "Statistik_Blatt4_Loesungen.pdf",
+      "page": 8,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt4_Loesungen.pdf#8"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt4_Loesungen/page-0008.png"
+    },
+    {
+      "id": "q224",
+      "question": "Welche spezifischen Kriterien zur Bewertung der Formatierung und Lesbarkeit von Code sind in der Liste aufgeführt?",
+      "answer": "Die Kriterien umfassen die Einheitlichkeit der Code-Formatierung, die Einhaltung der Java-Konventionen bei Einrückungen und Klammersetzungen, die Namensgebung und die Lesbarkeit durch diese Namensgebung.",
+      "doc_id": "SEI - 06 - Fragenkatalog.pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 06 - Fragenkatalog.pdf#1",
+        "SEI - 06 - Übung 6 (Qualitätsmanagement).pdf#6"
+      ],
+      "page_image_path": "data/pages/SEI - 06 - Fragenkatalog/page-0001.png"
+    },
+    {
+      "id": "q225",
+      "question": "Welcher Anteil der Fälle erfordert laut Analyse eine „kritische“ Klärung durch die Zentrale?",
+      "answer": "Es wird vermutet, dass nur 10 bis 20 Prozent aller Fälle eine solche kritische Klärung benötigen.",
+      "doc_id": "SEM - 01 - Lösung BPMN.pdf",
+      "page": 10,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEM - 01 - Lösung BPMN.pdf#10"
+      ],
+      "page_image_path": "data/pages/SEM - 01 - Lösung BPMN/page-0010.png"
+    },
+    {
+      "id": "q226",
+      "question": "Was ist der Zweck von Build-Tools im Kontext des Software-Engineerings?",
+      "answer": "Build-Tools dienen dazu, den Prozess der Erstellung eines auslieferbaren Softwareprodukts zu automatisieren und zu standardisieren. Sie ermöglichen reproduzierbare Builds, die unabhängig von der verwendeten Entwicklungsumgebung sind.",
+      "doc_id": "SEI - 07.2 - Implementierung. Werkzeuge.pdf",
+      "page": 9,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 07.2 - Implementierung. Werkzeuge.pdf#9"
+      ],
+      "page_image_path": "data/pages/SEI - 07.2 - Implementierung. Werkzeuge/page-0009.png"
+    },
+    {
+      "id": "q227",
+      "question": "Welche Kriterien definieren die Eigenschaft von Clean Code hinsichtlich der Aufgabenverteilung von Paketen, Klassen und Methoden?",
+      "answer": "Clean Code ist fokussiert, was bedeutet, dass Pakete, Klassen und Methoden klar abgegrenzte Aufgaben besitzen.",
+      "doc_id": "SEI - 07.1 - Implementierung. Grundlagen.pdf",
+      "page": 6,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 07.1 - Implementierung. Grundlagen.pdf#6"
+      ],
+      "page_image_path": "data/pages/SEI - 07.1 - Implementierung. Grundlagen/page-0006.png"
+    },
+    {
+      "id": "q228",
+      "question": "Welche spezifischen Schritte sind für die individuelle Vorbereitung eines Code-Reviews vorgesehen, bevor die Ergebnisse gemeinsam diskutiert werden?",
+      "answer": "Zuerst untersucht der Gutachter selbstständig die komplexeste Serverklasse ohne KI. Anschließend dokumentiert er seine Feststellungen mit Fundstelle, Typ, Beschreibung und Gewichtung.",
+      "doc_id": "SEI - 06 - Übung 6 (Qualitätsmanagement).pdf",
+      "page": 4,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 06 - Übung 6 (Qualitätsmanagement).pdf#4"
+      ],
+      "page_image_path": "data/pages/SEI - 06 - Übung 6 (Qualitätsmanagement)/page-0004.png"
+    },
+    {
+      "id": "q229",
+      "question": "Welche vier Arten von Ergebnissen können bei der Bearbeitung des Dialog-Beispielprompts für den Task-Organizer erzielt werden?",
+      "answer": "Mögliche Ergebnisse sind Rückfragen, Abhängigkeiten, ein Sprint-Vorschlag und Risiken.",
+      "doc_id": "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf",
+      "page": 16,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf#16"
+      ],
+      "page_image_path": "data/pages/SEI - 04.2 - Projektmanagement. Agiles Managment/page-0016.png"
+    },
+    {
+      "id": "q230",
+      "question": "Welche vier Aspekte müssen für jede Komponente im Rahmen der Komponentenstrukturierung dokumentiert werden?",
+      "answer": "Es müssen die Aufgabe und Verantwortung, die bereitgestellten und benötigten Schnittstellen, die Beziehungen und Kommunikation mit anderen Komponenten sowie die Begründung der Zerlegung dokumentiert werden.",
+      "doc_id": "SEM - 05.1 - Entwurf. Grundlagen.pdf",
+      "page": 20,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEM - 05.1 - Entwurf. Grundlagen.pdf#20"
+      ],
+      "page_image_path": "data/pages/SEM - 05.1 - Entwurf. Grundlagen/page-0020.png"
+    },
+    {
+      "id": "q231",
+      "question": "Welche Methoden existieren zur Implementierung der Interprozesskommunikation, um Informationen auszutauschen?",
+      "answer": "Der Informationsaustausch kann über den Hauptspeicher, über Dateien, über Pipes oder über Sockets erfolgen.",
+      "doc_id": "VS-05-Systemmodelle.pdf",
+      "page": 8,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-05-Systemmodelle.pdf#8"
+      ],
+      "page_image_path": "data/pages/VS-05-Systemmodelle/page-0008.png"
+    },
+    {
+      "id": "q232",
+      "question": "Welche Aufgaben muss eine Gruppe im Rahmen der Prüfungsleistung (PVL) erledigen, die in der Vorlesung präsentiert werden?",
+      "answer": "Jede Gruppe muss ein Übungsblatt oder Teile davon vorbereiten und in der folgenden Vorlesung präsentieren. Zudem gibt es im letzten Drittel eine Gruppenaufgabe, die schriftlich abgegeben und präsentiert wird.",
+      "doc_id": "00 Einführung.pdf",
+      "page": 6,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "00 Einführung.pdf#6"
+      ],
+      "page_image_path": "data/pages/00 Einführung/page-0006.png"
+    },
+    {
+      "id": "q233",
+      "question": "Welche Vorteile bietet das Phasenmodell im Kontext des Software Engineerings?",
+      "answer": "Das Phasenmodell ist leicht anwendbar, da es weit verbreitet ist, und es ermöglicht eine einfache Planung von Meilensteinen und Betriebsmitteln.",
+      "doc_id": "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf",
+      "page": 17,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf#17"
+      ],
+      "page_image_path": "data/pages/SEI - 02.1 - Vorgehensmodelle. Grundlagen/page-0017.png"
+    },
+    {
+      "id": "q234",
+      "question": "Was beschreibt der Begriff Komplexität im Kontext von Systemen oder Komponenten?",
+      "answer": "Komplexität ist der Grad der Schwierigkeit, ein System oder eine Komponente zu verstehen, zu überprüfen oder zu verändern.",
+      "doc_id": "SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken.pdf",
+      "page": 16,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken.pdf#16"
+      ],
+      "page_image_path": "data/pages/SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken/page-0016.png"
+    },
+    {
+      "id": "q235",
+      "question": "Welche Kriterien definieren Akteure im Kontext der Software-Modellierung, insbesondere im Hinblick auf ihre Interaktion mit dem System?",
+      "answer": "Akteure sind Rollen, die Personen, Systeme, externe Datenbanken, Ereignisse oder Termine umfassen. Sie sind direkt mit Use Cases verbunden und kommunizieren mit diesen, wobei sie in der Regel aktiv Vorgänge anstoßen.",
+      "doc_id": "01 UML.pdf",
+      "page": 51,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "01 UML.pdf#51"
+      ],
+      "page_image_path": "data/pages/01 UML/page-0051.png"
+    },
+    {
+      "id": "q236",
+      "question": "Welche Fristen und Abgabetermine sind für das Abschlussprojekt festgelegt?",
+      "answer": "Die Abgabe des Abschlussprojekts ist für den 30. November 2026 um 9:45 Uhr vorgesehen und erfolgt über den Upload-Link in Moodle.",
+      "doc_id": "AufgabenstellungGruppenarbeit.pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "AufgabenstellungGruppenarbeit.pdf#1"
+      ],
+      "page_image_path": "data/pages/AufgabenstellungGruppenarbeit/page-0001.png"
+    },
+    {
+      "id": "q237",
+      "question": "Welche spezifischen sprachlichen Paare werden im Kontext des menschlichen Dialogverhaltens als Adjazenzpaare genannt?",
+      "answer": "Als Adjazenzpaare werden Bitte – Danke, Wie geht’s? – Muss ja genannt.",
+      "doc_id": "03 b Dialog Theorie.pdf",
+      "page": 4,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "03 b Dialog Theorie.pdf#4"
+      ],
+      "page_image_path": "data/pages/03 b Dialog Theorie/page-0004.png"
+    },
+    {
+      "id": "q238",
+      "question": "Welche architektonische Verbesserung wird durch die Umstellung von Version 3 auf Version 4 erreicht, bezüglich der Abhängigkeiten?",
+      "answer": "Version 4 verbessert den fachlichen Zusammenhalt, indem sie die Abhängigkeiten nach innen richtet und die Klassen von veränderlichen technischen Implementierungen entkoppelt.",
+      "doc_id": "SEI - 05 - Kopplung und Zusammenhalt in Version 4 gegenüber 3.pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05 - Kopplung und Zusammenhalt in Version 4 gegenüber 3.pdf#3"
+      ],
+      "page_image_path": "data/pages/SEI - 05 - Kopplung und Zusammenhalt in Version 4 gegenüber 3/page-0003.png"
+    },
+    {
+      "id": "q239",
+      "question": "Welche Veränderung zeigt sich beim unteren Quartil, wenn man die Ergebnisse aus Teil b) mit denen aus Teil a) vergleicht?",
+      "answer": "Das untere Quartil ändert sich von 0,52 auf 1,25.",
+      "doc_id": "Statistik_Blatt3_Loesungen.pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt3_Loesungen.pdf#3"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt3_Loesungen/page-0003.png"
+    },
+    {
+      "id": "q240",
+      "question": "Welche Publikation von M. Deininger und T. Kessel behandelt die Geschäftsprozessanalyse unter Verwendung von BPMN und ist als Einführung für Prüfungen geeignet?",
+      "answer": "Die Publikation heißt \"Fit für die Prüfung. Geschäftsprozessanalyse mit BPMN.\" und bietet eine sechsseitige Einführung und Übersicht.",
+      "doc_id": "SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen.pdf",
+      "page": 22,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen.pdf#22"
+      ],
+      "page_image_path": "data/pages/SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen/page-0022.png"
+    },
+    {
+      "id": "q241",
+      "question": "Was repräsentiert der servletPath im Kontext der Jakarta Servlet API und wie wird dieser Teil des Request-URI abgerufen?",
+      "answer": "Der servletPath ist der Teil des Request-URI, der dem Servlet-Mapping entspricht. Dieser kann mittels der Methode HttpServletRequest.getServletPath() abgerufen werden.",
+      "doc_id": "VS-07a-WebServices_REST.pdf",
+      "page": 6,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-07a-WebServices_REST.pdf#6"
+      ],
+      "page_image_path": "data/pages/VS-07a-WebServices_REST/page-0006.png"
+    },
+    {
+      "id": "q242",
+      "question": "Welche Schicht des OSI-Modells ist für die Übertragung von Daten als Signale verantwortlich?",
+      "answer": "Die Übertragung der Frames als Signale erfolgt auf Schicht 1 des Modells.",
+      "doc_id": "VS-02-Netzwerkkommunikation.pdf",
+      "page": 11,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-02-Netzwerkkommunikation.pdf#11"
+      ],
+      "page_image_path": "data/pages/VS-02-Netzwerkkommunikation/page-0011.png"
+    },
+    {
+      "id": "q243",
+      "question": "Welche Themenbereiche werden in Teil 2 der Übersicht behandelt, die sich mit Softwarearchitekturen beschäftigen?",
+      "answer": "Teil 2 behandelt Architekturmuster, Schichtenarchitektur und Clean Architecture.",
+      "doc_id": "SEI - 05.3 - Entwurf. REST und Spring Boot - Server.pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05.2 - Entwurf. Architekturmuster.pdf#2",
+        "SEI - 05.3 - Entwurf. REST und Spring Boot - Server.pdf#2",
+        "SEI - 05.4 - Entwurf. Spring Boot - Web-Client.pdf#2",
+        "SEM - 05.1 - Entwurf. Grundlagen.pdf#3"
+      ],
+      "page_image_path": "data/pages/SEI - 05.3 - Entwurf. REST und Spring Boot - Server/page-0002.png"
+    },
+    {
+      "id": "q244",
+      "question": "Was unterscheidet die prozessorientierte Qualitätssicherung von der produktorientierten Qualitätssicherung im Kontext des Software Engineering?",
+      "answer": "Die produktorientierte Qualitätssicherung prüft die Qualität von fertigen Produkten und Zwischenergebnissen, während die prozessorientierte Qualitätssicherung die Qualität des Entwicklungsprozesses sichert und verbessert.",
+      "doc_id": "SEI - 06.1 - Qualitätsmanagement. Grundlagen.pdf",
+      "page": 16,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 06.1 - Qualitätsmanagement. Grundlagen.pdf#16"
+      ],
+      "page_image_path": "data/pages/SEI - 06.1 - Qualitätsmanagement. Grundlagen/page-0016.png"
+    },
+    {
+      "id": "q245",
+      "question": "Wie wird das arithmetische Mittel berechnet, wenn Merkmalsausprägungen und relative Häufigkeiten gegeben sind?",
+      "answer": "Das arithmetische Mittel $\\bar{x}$ ergibt sich aus der Summe der Produkte aus den Merkmalsausprägungen $X_j$ und den relativen Häufigkeiten $h(a_j)$, geteilt durch die Anzahl der Werte.",
+      "doc_id": "Statistik_Blatt2_Loesungen (1).pdf",
+      "page": 8,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt2_Loesungen (1).pdf#8"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt2_Loesungen (1)/page-0008.png"
+    },
+    {
+      "id": "q246",
+      "question": "Welche spezifischen Funktionen werden im Zusammenhang mit der Verarbeitung von Sprache genannt, die von der Hochschule für Technik Stuttgart behandelt werden?",
+      "answer": "Die genannten Aufgaben umfassen das Verstehen von Sprache mittels Speech-to-Text und das Interpretieren von Sprache, um die eigentliche Aufgabe zu bestimmen.",
+      "doc_id": "03 c DialogLLMs.pdf",
+      "page": 5,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "03 c DialogLLMs.pdf#4",
+        "03 c DialogLLMs.pdf#5",
+        "03a Dialog Intro.pdf#10"
+      ],
+      "page_image_path": "data/pages/03 c DialogLLMs/page-0005.png"
+    },
+    {
+      "id": "q247",
+      "question": "Was ist der Unterschied zwischen einem Experten-erstellten und einem im Maschinellen Lernen (ML) generierten Entscheidungsbaum?",
+      "answer": "Ein Entscheidungsbaum, der von einem Experten erstellt wird, dient der Veranschaulichung von Entscheidungen. Ein im ML erstellter Baum wird auf Trainingsdaten basierend generiert, um Vorhersagen für Testdaten zu treffen.",
+      "doc_id": "02 Lernen Klassifikation.pdf",
+      "page": 10,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02 Lernen Klassifikation.pdf#10",
+        "02-d Lernen Evaluation.pdf#19"
+      ],
+      "page_image_path": "data/pages/02 Lernen Klassifikation/page-0010.png"
+    },
+    {
+      "id": "q248",
+      "question": "Welche Komponenten bilden die Architektur, wenn ein Webservice erstellt wird, und in welcher Reihenfolge interagieren sie?",
+      "answer": "Die Architektur lautet: Browser geht zum Servlet (Controller), welches das Model und die View (JSP / Template / JSON) nutzt.",
+      "doc_id": "VS-07-WebServices_Grundlagen.pdf",
+      "page": 18,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-07-WebServices_Grundlagen.pdf#18"
+      ],
+      "page_image_path": "data/pages/VS-07-WebServices_Grundlagen/page-0018.png"
+    },
+    {
+      "id": "q249",
+      "question": "Welche zwei Hauptquellen werden für fehlerhafte Stammdaten in Unternehmen genannt?",
+      "answer": "Zwei Hauptquellen sind fehlerhafte Eingaben und der Missbrauch von Eingabefeldern.",
+      "doc_id": "SEI - 01 - Einführungsaufgabe.pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 01 - Einführungsaufgabe.pdf#1"
+      ],
+      "page_image_path": "data/pages/SEI - 01 - Einführungsaufgabe/page-0001.png"
+    },
+    {
+      "id": "q250",
+      "question": "Welche Schritte umfasst das Risikomanagement, um potenzielle Gefahren zu bewältigen?",
+      "answer": "Das Risikomanagement beinhaltet die Identifikation der Risiken, deren Bewertung hinsichtlich Wahrscheinlichkeit und Schadensausmaß, die Analyse der Ursachen, die Dokumentation von Maßnahmen und die Erarbeitung präventiver Maßnahmen.",
+      "doc_id": "SEI - 04.1 - Projektmanagement. Grundlagen.pdf",
+      "page": 20,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 04.1 - Projektmanagement. Grundlagen.pdf#20"
+      ],
+      "page_image_path": "data/pages/SEI - 04.1 - Projektmanagement. Grundlagen/page-0020.png"
+    },
+    {
+      "id": "q251",
+      "question": "Was ist der Zweck von Retrieval-augmented Generation im Kontext der Informationsgenerierung?",
+      "answer": "Bei Retrieval-augmented Generation werden Datenbanken durchsucht, um passende Informationen zu finden, die dann als Grundlage für die Erstellung des Outputs dienen.",
+      "doc_id": "03 d Dialog RAG.pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "03 d Dialog RAG.pdf#3"
+      ],
+      "page_image_path": "data/pages/03 d Dialog RAG/page-0003.png"
+    },
+    {
+      "id": "q252",
+      "question": "Wie wird die Wahrscheinlichkeit berechnet, dass eine zehnstellige Telefonnummer, deren erste Ziffer nicht Null sein darf, höchstens eine Null enthält?",
+      "answer": "Die Wahrscheinlichkeit wird durch die Summe der Anzahl der Nummern ohne Null und der Anzahl der Nummern mit genau einer Null geteilt durch die Gesamtzahl der möglichen Telefonnummern berechnet.",
+      "doc_id": "Statistik_Blatt6_Loesungen.pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt6_Loesungen.pdf#3"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt6_Loesungen/page-0003.png"
+    },
+    {
+      "id": "q253",
+      "question": "Welche Messwerte für Brinellhärte und Einsenktiefe sind für die Versuche zu Stahl bei Kälteverformung aufgeführt?",
+      "answer": "Die Versuche umfassen Einsenktiefen von 6 mm bis 35 mm und zugehörige Brinellhärten zwischen 68 und 32 angegeben.",
+      "doc_id": "Statistik_Blatt4.pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt4.pdf#2"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt4/page-0002.png"
+    },
+    {
+      "id": "q254",
+      "question": "Wie wird die Wahrscheinlichkeit P(A) berechnet, wenn P(A ∩B) gleich P(A) mal P(B) ist, P(B) 0,35 und P(A ∪B) 0,5?",
+      "answer": "P(A) wird mit der Formel P(A ∪B) − P(B) / (1 − P(B)) berechnet. Das Ergebnis dieser Berechnung ist 0,2308.",
+      "doc_id": "Statistik_Blatt5_Loesungen.pdf",
+      "page": 5,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt5_Loesungen.pdf#5"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt5_Loesungen/page-0005.png"
+    },
+    {
+      "id": "q255",
+      "question": "Welche drei Kriterien definieren die Fähigkeit von Maschinen, die menschliche Informationsverarbeitung nachzuahmen?",
+      "answer": "Maschinelles Beherrschen der Informationsverarbeitung, das maschinelle Ausführen von Aktionen und die Unabhängigkeit von menschlicher Steuerung sind diese Kriterien.",
+      "doc_id": "01 Einstieg Übersicht.pdf",
+      "page": 4,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "01 Einstieg Übersicht.pdf#4"
+      ],
+      "page_image_path": "data/pages/01 Einstieg Übersicht/page-0004.png"
+    },
+    {
+      "id": "q256",
+      "question": "Was repräsentiert die Menge aller durchlaufbaren Markierungen eines Petri-Netzes, und welche Möglichkeiten gibt es, diese Menge darzustellen?",
+      "answer": "Die Menge aller erreichbaren Markierungen wird als R(PN) bezeichnet und kann endlich oder unendlich sein. Eine endliche Erreichbarkeitsmenge kann beispielsweise durch einen Erreichbarkeitsgraphen dargestellt werden.",
+      "doc_id": "02_Petri-Netze.pdf",
+      "page": 15,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02_Petri-Netze.pdf#15"
+      ],
+      "page_image_path": "data/pages/02_Petri-Netze/page-0015.png"
+    },
+    {
+      "id": "q257",
+      "question": "Welche Informationen sind bei den Anmerkungen, die während einer laufenden Auktion hinzugefügt werden, enthalten?",
+      "answer": "Anmerkungen beinhalten einen Text sowie einen Zeitstempel.",
+      "doc_id": "SEM - 03 - Übung 3 (Use Case - vollständig).pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 03 - Übung 3 (Requirements Engineering + Java).pdf#1",
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#2",
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#3",
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#5",
+        "SEM - 03 - Übung 3 (Use Case - vollständig).pdf#6"
+      ],
+      "page_image_path": "data/pages/SEM - 03 - Übung 3 (Use Case - vollständig)/page-0003.png"
+    },
+    {
+      "id": "q258",
+      "question": "Welche Herausforderungen sind im Zusammenhang mit neuronalen Netzen hinsichtlich der Nutzung und des Betriebs zu nennen?",
+      "answer": "Neuronale Netze benötigen viel Trainingsdaten, Parameteroptimierung und Rechenzeit. Zudem sind sie schwer zu interpretieren.",
+      "doc_id": "02-02 b Neuronale Netze Anwendung.pdf",
+      "page": 10,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02-02 b Neuronale Netze Anwendung.pdf#10"
+      ],
+      "page_image_path": "data/pages/02-02 b Neuronale Netze Anwendung/page-0010.png"
+    },
+    {
+      "id": "q259",
+      "question": "Welchen Befehl muss man in der Eingabeaufforderung unter Windows verwenden, um die IP-Adresse des Rechners im WLAN zu ermitteln?",
+      "answer": "Man nutzt den Befehl `netsh interface ip show addresses \"WLAN\"`.",
+      "doc_id": "SEI - 05 - Übung 5 (REST).pdf",
+      "page": 7,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05 - Übung 5 (REST).pdf#7"
+      ],
+      "page_image_path": "data/pages/SEI - 05 - Übung 5 (REST)/page-0007.png"
+    },
+    {
+      "id": "q260",
+      "question": "Welche Schritte sind typischerweise beim Aufbau eines einfachen Servers mit Stream-Sockets zu beachten?",
+      "answer": "Der Aufbau umfasst das Erzeugen eines Sockets, das Warten auf eine Fertigstellung, das Akzeptieren einer Clientverbindung, das Öffnen der Ein- und Ausgabestreams, die Kommunikation und schließlich das Schließen der Streams und des Sockets.",
+      "doc_id": "VS-06-Sockets.pdf",
+      "page": 8,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-06-Sockets.pdf#8"
+      ],
+      "page_image_path": "data/pages/VS-06-Sockets/page-0008.png"
+    },
+    {
+      "id": "q261",
+      "question": "Welche spezifischen Aufgabenbereiche umfassen die Dialog- und Assistenzsysteme an der Hochschule für Technik Stuttgart?",
+      "answer": "Die Aufgaben umfassen die Informationsrecherche sowie kleine Automatisierungsaufgaben.",
+      "doc_id": "03a Dialog Intro.pdf",
+      "page": 9,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "03a Dialog Intro.pdf#9"
+      ],
+      "page_image_path": "data/pages/03a Dialog Intro/page-0009.png"
+    },
+    {
+      "id": "q262",
+      "question": "Welche Kerntätigkeiten des Software-Entwicklungsprozesses sind in den verschiedenen vorgestellten Modellen zu finden?",
+      "answer": "Die einzelnen Aktivitäten des Software-Entwicklungsprozesses werden besprochen. Diese Kerntätigkeiten sind in allen Modellen wiederzufinden.",
+      "doc_id": "SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle.pdf",
+      "page": 27,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle.pdf#27"
+      ],
+      "page_image_path": "data/pages/SEI - 02.2 - Vorgehensmodelle. Spezielle Modelle/page-0027.png"
+    },
+    {
+      "id": "q263",
+      "question": "Welche Dateiformate werden typischerweise für einen Datensatz an der Hochschule für Technik Stuttgart verwendet?",
+      "answer": "Ein Datensatz ist üblicherweise im CSV-Format oder als Datenbank verfügbar, manchmal auch als Excel-Datei.",
+      "doc_id": "02 Lernen Daten.pdf",
+      "page": 7,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02 Lernen Daten.pdf#7",
+        "02-d Lernen Evaluation.pdf#7"
+      ],
+      "page_image_path": "data/pages/02 Lernen Daten/page-0007.png"
+    },
+    {
+      "id": "q264",
+      "question": "Welche spezifischen Punkte soll ein KI-System bei der Überprüfung der Ergebnisse einer Anforderungsanalyse anhand eines Interviewprotokolls untersuchen?",
+      "answer": "Die Untersuchung soll sich auf fehlende oder nicht belegte Anforderungen, unklare Annahmen, Widersprüche, unpräzise Formulierungen sowie mögliche Verbesserungen von Use Cases und User Stories konzentrieren.",
+      "doc_id": "SEI - 03 - Übung 3 (Requirements Engineering + Java).pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 03 - Übung 3 (Requirements Engineering + Java).pdf#3"
+      ],
+      "page_image_path": "data/pages/SEI - 03 - Übung 3 (Requirements Engineering + Java)/page-0003.png"
+    },
+    {
+      "id": "q265",
+      "question": "Welche Bestandteile umfasst die Projektübersicht im Kontext der Anforderungsspezifikation?",
+      "answer": "Die Projektübersicht beinhaltet die Zusammenfassung, die Kunden und Benutzer, die Randbedingungen sowie die Umgebungen Betrieb, Entwicklung und Wartung.",
+      "doc_id": "SEI - 03.1 - Requirements Engineering. Grundlagen.pdf",
+      "page": 15,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 03.1 - Requirements Engineering. Grundlagen.pdf#15"
+      ],
+      "page_image_path": "data/pages/SEI - 03.1 - Requirements Engineering. Grundlagen/page-0015.png"
+    },
+    {
+      "id": "q266",
+      "question": "Welche Aufteilungsmuster gibt es beim Ursprungsdatensatz vor dem ersten Training?",
+      "answer": "Der Ursprungsdatensatz kann beispielsweise in einem Verhältnis von 90 Prozent zu 10 Prozent oder 66 Prozent zu 33 Prozent geteilt werden.",
+      "doc_id": "02-d Lernen Evaluation.pdf",
+      "page": 25,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02-d Lernen Evaluation.pdf#25"
+      ],
+      "page_image_path": "data/pages/02-d Lernen Evaluation/page-0025.png"
+    },
+    {
+      "id": "q267",
+      "question": "Welche Kriterien müssen User Stories erfüllen, um als gut definiert zu gelten, und was ist der Unterschied zwischen einer User Story und einer vollständigen Spezifikation?",
+      "answer": "User Stories müssen die Kriterien INVEST erfüllen, was für Independent, Negotiable, Valuable, Estimatable, Small und Testable steht. Eine User Story ist keine vollständige Spezifikation und beinhaltet auch keine technische Lösung.",
+      "doc_id": "SEI - 03.2 - Requirements Engineering. Methoden.pdf",
+      "page": 19,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 03.2 - Requirements Engineering. Methoden.pdf#19"
+      ],
+      "page_image_path": "data/pages/SEI - 03.2 - Requirements Engineering. Methoden/page-0019.png"
+    },
+    {
+      "id": "q268",
+      "question": "Wie unterscheidet sich der Client Prozess von einem Server Prozess hinsichtlich ihrer Lebensdauer und Funktion bei der Interprozesskommunikation?",
+      "answer": "Der Client Prozess ist ein kurzlebiger Prozess, der die Nutzung durch einen Anwender abbildet und als Initiator einer IPC agiert. Im Gegensatz dazu ist der Server Prozess ein langlebiger Prozess, der als Diensterbringer einer IPC fungiert.",
+      "doc_id": "VS-01-Grundlagen.pdf",
+      "page": 26,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-01-Grundlagen.pdf#26"
+      ],
+      "page_image_path": "data/pages/VS-01-Grundlagen/page-0026.png"
+    },
+    {
+      "id": "q269",
+      "question": "Welcher Prozentsatz der Kupferdrahtdurchmesser liegt innerhalb von $\\mu - 2\\sigma$ und $\\mu + 2\\sigma$, wenn die Durchmesser normalverteilt sind?",
+      "answer": "Es wird ein Anteil von 95,45% angegeben, der innerhalb dieser Schwankungsintervalle liegt.",
+      "doc_id": "Statistik (1).pdf",
+      "page": 141,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik (1).pdf#141"
+      ],
+      "page_image_path": "data/pages/Statistik (1)/page-0141.png"
+    },
+    {
+      "id": "q270",
+      "question": "Welche Rolle spielt der Web-Client im Verhältnis zum Browser und zum REST-Server?",
+      "answer": "Der Web-Client fungiert für den Browser als Server und für den REST-Server als Client.",
+      "doc_id": "SEI - 05.4 - Entwurf. Spring Boot - Web-Client.pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05.4 - Entwurf. Spring Boot - Web-Client.pdf#3"
+      ],
+      "page_image_path": "data/pages/SEI - 05.4 - Entwurf. Spring Boot - Web-Client/page-0003.png"
+    },
+    {
+      "id": "q271",
+      "question": "Was bedeutet die Bezeichnung Nebenläufigkeit im Kontext von mehreren Threads?",
+      "answer": "Nebenläufigkeit bedeutet, dass mehrere Threads scheinbar gleichzeitig ablaufen. Auf einem Einprozessorsystem wird der Prozessor zwischen diesen Threads hin und her gewechselt.",
+      "doc_id": "VS-03-Threads.pdf",
+      "page": 4,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-03-Threads.pdf#4"
+      ],
+      "page_image_path": "data/pages/VS-03-Threads/page-0004.png"
+    },
+    {
+      "id": "q272",
+      "question": "Wann und durch welche Forscher wurde die Entwicklung mehrschichtiger neuronaler Netze realisiert?",
+      "answer": "Mehrschichtige Netze entstanden in den späten 80er oder frühen 90er Jahren durch Rumelhart, Hinton und Williams.",
+      "doc_id": "02-02 a Neuronale Netze.pdf",
+      "page": 5,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "02-02 a Neuronale Netze.pdf#5"
+      ],
+      "page_image_path": "data/pages/02-02 a Neuronale Netze/page-0005.png"
+    },
+    {
+      "id": "q273",
+      "question": "Welche exemplarischen Phasen eines Projekts, das mit Scrum durchgeführt wurde, werden zur Veranschaulichung genannt?",
+      "answer": "Beispiele für Sprints sind die Ansteuerung eines Roboters für eine Funktion, die Entwicklung zusätzlicher Funktionen oder die Implementierung einer ersten Funktion über die Benutzeroberfläche.",
+      "doc_id": "SEM - 02 - Lösung (Vorgehensmodelle).pdf",
+      "page": 5,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEM - 02 - Lösung (Vorgehensmodelle).pdf#5"
+      ],
+      "page_image_path": "data/pages/SEM - 02 - Lösung (Vorgehensmodelle)/page-0005.png"
+    },
+    {
+      "id": "q274",
+      "question": "Was ist der Hauptunterschied zwischen BPEL und BPMN in Bezug auf die Art der Prozessbeschreibung?",
+      "answer": "BPMN stellt eine abstrakte Darstellung dar, während BPEL eine operative Beschreibung ist.",
+      "doc_id": "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf",
+      "page": 11,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2.pdf#11"
+      ],
+      "page_image_path": "data/pages/SEI - 01.2 - Geschäftsprozessanalyse. Modellierung v2/page-0011.png"
+    },
+    {
+      "id": "q275",
+      "question": "Welche beruflichen Stationen hat Prof. Dr. Alexander Rausch vor seiner Professur an der Hochschule für Technik Stuttgart innegehabt?",
+      "answer": "Er arbeitete bei IBM Deutschland Research & Development und der SAP AG, bevor er 2007 an der HFT Stuttgart begann.",
+      "doc_id": "VS-00-Organisation.pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-00-Organisation.pdf#3"
+      ],
+      "page_image_path": "data/pages/VS-00-Organisation/page-0003.png"
+    },
+    {
+      "id": "q276",
+      "question": "Welche Technologien werden im Zusammenhang mit der Speicherung und dem Lesen von Aufgaben in einer Datenbank verwendet?",
+      "answer": "Dazu werden die Datenbankanbindung JDBC, ein OR-Mapper und ein Domain-Mapper genutzt, wobei SQLite als einfaches Datenbank-Management-System (DBMS) eingesetzt wird.",
+      "doc_id": "SEI - 02 - Übung 2 (Vorgehensmodelle + java).pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 02 - Übung 2 (Vorgehensmodelle + java).pdf#2"
+      ],
+      "page_image_path": "data/pages/SEI - 02 - Übung 2 (Vorgehensmodelle + java)/page-0002.png"
+    },
+    {
+      "id": "q277",
+      "question": "Welche Trennung zwischen Serveranwendung und HTML-Änderungen wird im Hinblick auf die Prozessgrenze beschrieben?",
+      "answer": "Änderungen am HTML oder an der Browsernavigation beeinflussen die Use Cases nicht; ebenso berühren Änderungen der Persistenz den Client nicht.",
+      "doc_id": "SEI - 05 - Kopplung und Zusammenhalt von Version 4 zu 5.pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05 - Kopplung und Zusammenhalt von Version 4 zu 5.pdf#3"
+      ],
+      "page_image_path": "data/pages/SEI - 05 - Kopplung und Zusammenhalt von Version 4 zu 5/page-0003.png"
+    },
+    {
+      "id": "q278",
+      "question": "Welche Komponenten müssen angepasst oder ersetzt werden, wenn die SQLite-Datenbank durch PostgreSQL ersetzt werden soll, und welche Konsequenzen hat dies für die OrganizerUseCases?",
+      "answer": "Die Datenbank-spezifischen Klassen müssten geändert werden. Die Änderung könnte Auswirkungen auf die OrganizerUseCases haben, da diese von der Datenbankinteraktion abhängen.",
+      "doc_id": "SEI - 04 - Übung 4 (Projektmanagement + Java) (1).pdf",
+      "page": 13,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 04 - Übung 4 (Projektmanagement + Java) (1).pdf#13"
+      ],
+      "page_image_path": "data/pages/SEI - 04 - Übung 4 (Projektmanagement + Java) (1)/page-0013.png"
+    },
+    {
+      "id": "q279",
+      "question": "Welche Mechanismen nutzen Microservices, um miteinander zu interagieren, wenn sie eine große Anwendung zerlegen?",
+      "answer": "Die Dienste tauschen Informationen über festgelegte Schnittstellen aus, beispielsweise mittels REST oder durch Nachrichten.",
+      "doc_id": "SEI - 05.2 - Entwurf. Architekturmuster.pdf",
+      "page": 12,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05.2 - Entwurf. Architekturmuster.pdf#12"
+      ],
+      "page_image_path": "data/pages/SEI - 05.2 - Entwurf. Architekturmuster/page-0012.png"
+    },
+    {
+      "id": "q280",
+      "question": "Welche Eigenschaften von Software führen dazu, dass Aufwand, Fortschritt und Qualität schwer zu beurteilen sind?",
+      "answer": "Da Software immateriell ist, sind ihr Umfang und ihre Komplexität nicht direkt ersichtlich. Dies erschwert die genaue Schätzung von Aufwand, Fortschritt und Qualität.",
+      "doc_id": "SEI - 00.2 - Einführung.pdf",
+      "page": 14,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 00.2 - Einführung.pdf#14"
+      ],
+      "page_image_path": "data/pages/SEI - 00.2 - Einführung/page-0014.png"
+    },
+    {
+      "id": "q281",
+      "question": "Wie behandelt die RMI-Laufzeit ein Objekt, das sowohl die Serializable- als auch die Remote-Eigenschaft besitzt?",
+      "answer": "Wenn ein Objekt beide Eigenschaften hat, hat die Remote-Semantik Vorrang. Dieses Objekt wird dann nicht als Serializable-Objekt übertragen, sondern als Remote-Referenz, wobei der Stub serialisiert wird.",
+      "doc_id": "VS-04-RMI.pdf",
+      "page": 18,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-04-RMI.pdf#18"
+      ],
+      "page_image_path": "data/pages/VS-04-RMI/page-0018.png"
+    },
+    {
+      "id": "q282",
+      "question": "Wie hoch ist die Wahrscheinlichkeit, dass eine Person, die positiv mit dem ELISA-Test auf HIV getestet wurde, tatsächlich HIV-positiv ist, wenn die Sensitivität 99,9% und die Spezifität 99,8% beträgt?",
+      "answer": "Die Wahrscheinlichkeit, dass eine positiv getestete Person auch wirklich HIV-positiv ist, ist die positive prädiktive Wertigkeit, die in Aufgabe 4b berechnet werden muss.",
+      "doc_id": "Statistik_Blatt7.pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt7.pdf#1"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt7/page-0001.png"
+    },
+    {
+      "id": "q283",
+      "question": "Welche Attribute müssen die Modellklassen enthalten, um Aufgaben zu verwalten, und welche Datentypen werden dafür verwendet?",
+      "answer": "Die Aufgaben müssen die Attribute id (int), title (String), entry (LocalDate), estimate (int), priority (enum Priority), due (LocalDate), done (boolean), und description (String) besitzen.",
+      "doc_id": "SEI - 01 - Übung 1 (Geschäftsprozessanalyse + Java).pdf",
+      "page": 4,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 01 - Übung 1 (Geschäftsprozessanalyse + Java).pdf#4"
+      ],
+      "page_image_path": "data/pages/SEI - 01 - Übung 1 (Geschäftsprozessanalyse + Java)/page-0004.png"
+    },
+    {
+      "id": "q284",
+      "question": "Welche Akteure, die in den Abläufen vorkommen, werden in dieser Aufgabenstellung genannt?",
+      "answer": "Die identifizierten Rollen sind Gesellschaft 1, Gesellschaft 2 und die Zentrale, welche den Sachbearbeiter oder Chef umfasst.",
+      "doc_id": "SEM - 01 - Lösung BPMN.pdf",
+      "page": 5,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEM - 01 - Lösung BPMN.pdf#4",
+        "SEM - 01 - Lösung BPMN.pdf#5"
+      ],
+      "page_image_path": "data/pages/SEM - 01 - Lösung BPMN/page-0005.png"
+    },
+    {
+      "id": "q285",
+      "question": "Welche Arten von Schnittstellen bietet der KI-Codieragent von OpenAI für die Nutzung in der Softwareentwicklung?",
+      "answer": "Der Agent ist über eine Desktop-Anwendung, die Kommandozeile (CLI) oder eine Integration in eine IDE nutzbar.",
+      "doc_id": "SEI - 07.2 - Implementierung. Werkzeuge.pdf",
+      "page": 20,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 07.2 - Implementierung. Werkzeuge.pdf#20"
+      ],
+      "page_image_path": "data/pages/SEI - 07.2 - Implementierung. Werkzeuge/page-0020.png"
+    },
+    {
+      "id": "q286",
+      "question": "Was bedeutet das Liskovs Substitutionsprinzip bezüglich der Austauschbarkeit von Objekten zwischen Ober- und Unterklassen?",
+      "answer": "Ein Objekt einer Unterklasse muss jederzeit anstelle eines Objekts seiner Oberklasse verwendet werden können. Dies impliziert, dass die Unterklasse die Vorbedingungen der Oberklasse erfüllen muss.",
+      "doc_id": "SEI - 07.1 - Implementierung. Grundlagen.pdf",
+      "page": 10,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 07.1 - Implementierung. Grundlagen.pdf#10"
+      ],
+      "page_image_path": "data/pages/SEI - 07.1 - Implementierung. Grundlagen/page-0010.png"
+    },
+    {
+      "id": "q287",
+      "question": "Welche spezifischen Metriken müssen bei der Vermessung der Projekte aus Übung 5 mit eclipse metrics ermittelt werden?",
+      "answer": "Es müssen die Gesamtzahl der Lines of Code, die größte Klasse (gem. LoC), die 20% der Klassen mit den meisten LoC, die Klasse mit der komplexesten Methode (gem. McCabe), das Paket mit dem höchsten Efferent Coupling und das Paket mit dem höchsten Afferent Coupling ermittelt werden.",
+      "doc_id": "SEI - 06 - Übung 6 (Qualitätsmanagement).pdf",
+      "page": 1,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 06 - Übung 6 (Qualitätsmanagement).pdf#1"
+      ],
+      "page_image_path": "data/pages/SEI - 06 - Übung 6 (Qualitätsmanagement)/page-0001.png"
+    },
+    {
+      "id": "q288",
+      "question": "Welche Aufgaben im Rahmen der Sprint-Planung kann Künstliche Intelligenz unterstützen, wenn es um Abhängigkeiten und den Umfang geht?",
+      "answer": "KI kann bei der Sprint-Planung Abhängigkeiten und Risiken analysieren und den Sprint-Zuschnitt hinterfragen.",
+      "doc_id": "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf",
+      "page": 15,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 04.2 - Projektmanagement. Agiles Managment.pdf#15"
+      ],
+      "page_image_path": "data/pages/SEI - 04.2 - Projektmanagement. Agiles Managment/page-0015.png"
+    },
+    {
+      "id": "q289",
+      "question": "Welche Einschränkungen gelten für den Agenten, wenn er die Architekturvarianten für den Task-Organizer untersucht?",
+      "answer": "Der Agent darf die bestehende Implementierung nicht verändern und er darf keine neuen Anforderungen erfinden. Zudem muss er Annahmen klar kennzeichnen und selbstständig Architekturentscheidungen treffen, was untersagt ist.",
+      "doc_id": "SEM - 05.1 - Entwurf. Grundlagen.pdf",
+      "page": 44,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEM - 05.1 - Entwurf. Grundlagen.pdf#44"
+      ],
+      "page_image_path": "data/pages/SEM - 05.1 - Entwurf. Grundlagen/page-0044.png"
+    },
+    {
+      "id": "q290",
+      "question": "Welche spezifischen Kommunikationsmechanismen werden im Kontext verteilter Systeme neben dem Remote Procedure Call (RPC) vorgestellt?",
+      "answer": "Es werden die Socketkommunikation und die Interprozesskommunikation als Kommunikations- und Programmiermodelle genannt.",
+      "doc_id": "VS-05-Systemmodelle.pdf",
+      "page": 3,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-05-Systemmodelle.pdf#3"
+      ],
+      "page_image_path": "data/pages/VS-05-Systemmodelle/page-0003.png"
+    },
+    {
+      "id": "q291",
+      "question": "Welche spezifische Kursbezeichnung und welches Semester ist mit dem Schlüsselwort swm26 verbunden?",
+      "answer": "Der Kurs ist Software-Modellierung und wird für das 3. Semester des Bachelor Informatik angeboten.",
+      "doc_id": "00 Einführung.pdf",
+      "page": 5,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "00 Einführung.pdf#5"
+      ],
+      "page_image_path": "data/pages/00 Einführung/page-0005.png"
+    },
+    {
+      "id": "q292",
+      "question": "Welche Publikationen von Barry Boehm behandeln die Ökonomie von Softwareentwicklung und Metriken?",
+      "answer": "Barry Boehm veröffentlichte 'Software Engineering Economics' im Jahr 1981 und die 'Industrial Software Metrics Top 10 List' in IEEE Software 1987.",
+      "doc_id": "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf",
+      "page": 25,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 02.1 - Vorgehensmodelle. Grundlagen.pdf#25"
+      ],
+      "page_image_path": "data/pages/SEI - 02.1 - Vorgehensmodelle. Grundlagen/page-0025.png"
+    },
+    {
+      "id": "q293",
+      "question": "Welche Einschränkung wird bezüglich der Metrik interpretiert, wenn es um die Aussagekraft geht?",
+      "answer": "Die Messbarkeit einer Metrik garantiert nicht automatisch, dass diese aussagekräftig ist.",
+      "doc_id": "SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken.pdf",
+      "page": 18,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken.pdf#18"
+      ],
+      "page_image_path": "data/pages/SEI - 06.2 - Qualitätsmanagement. Reviews und Metriken/page-0018.png"
+    },
+    {
+      "id": "q294",
+      "question": "Welche Nachteile weist die Software-Modellierung im Hinblick auf die Formalisierung und die Überprüfung von Konsistenzen auf?",
+      "answer": "Die Beschreibung ist nicht formalisiert, und Konsistenzen können nicht automatisch überprüft werden.",
+      "doc_id": "01 UML.pdf",
+      "page": 61,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "01 UML.pdf#61"
+      ],
+      "page_image_path": "data/pages/01 UML/page-0061.png"
+    },
+    {
+      "id": "q295",
+      "question": "Welche Low-Code-Plattformen werden im Zusammenhang mit der Automatisierung von Prozessen und RAG-Bots erwähnt?",
+      "answer": "N8N wird als aktive Low-Code-Plattform genannt, die für die Automatisierung von Prozessen und RAG-Bots geeignet ist. Flowise kann zwar nicht mehr als Plattform genutzt werden, lässt sich aber lokal installieren.",
+      "doc_id": "AufgabenstellungGruppenarbeit.pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "AufgabenstellungGruppenarbeit.pdf#2"
+      ],
+      "page_image_path": "data/pages/AufgabenstellungGruppenarbeit/page-0002.png"
+    },
+    {
+      "id": "q296",
+      "question": "Welche vier Maximen unterstützen die Anwendung des Kooperationsprinzips nach Grice?",
+      "answer": "Die Maximen sind die Maxime der Quantität, die Maxime der Qualität, die Maxime der Relevanz und die Maxime des Stils.",
+      "doc_id": "03 b Dialog Theorie.pdf",
+      "page": 6,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "03 b Dialog Theorie.pdf#6"
+      ],
+      "page_image_path": "data/pages/03 b Dialog Theorie/page-0006.png"
+    },
+    {
+      "id": "q297",
+      "question": "Welche technischen Details dürfen die Layer 4 kennen, und welche technischen Adapter kennen die inneren Layer nicht?",
+      "answer": "Layer 4 darf die inneren Typen kennen; die inneren Layer kennen die technischen Adapter nicht.",
+      "doc_id": "SEI - 05 - Kopplung und Zusammenhalt in Version 4 gegenüber 3.pdf",
+      "page": 2,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 05 - Kopplung und Zusammenhalt in Version 4 gegenüber 3.pdf#2"
+      ],
+      "page_image_path": "data/pages/SEI - 05 - Kopplung und Zusammenhalt in Version 4 gegenüber 3/page-0002.png"
+    },
+    {
+      "id": "q298",
+      "question": "Wie groß ist der arithmetische Mittelwert der Messwerte, die bei der Qualitätskontrolle eines Bauteils ermittelt wurden?",
+      "answer": "Der arithmetische Mittelwert beträgt 17.2972 mm.",
+      "doc_id": "Statistik_Blatt3_Loesungen.pdf",
+      "page": 6,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "Statistik_Blatt3_Loesungen.pdf#6"
+      ],
+      "page_image_path": "data/pages/Statistik_Blatt3_Loesungen/page-0006.png"
+    },
+    {
+      "id": "q299",
+      "question": "Welche Systeme dienen der Analyse von Daten, die aus verschiedenen Quellen stammen, und welche Technologien sind hierbei besonders relevant?",
+      "answer": "Business Intelligence-Systeme (BI) dienen der Analyse von Daten aus unterschiedlichen Quellen. Insbesondere die Verknüpfung und Aufbereitung dieser Daten erfolgt mit KI oder Big Data.",
+      "doc_id": "SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen.pdf",
+      "page": 14,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen.pdf#14"
+      ],
+      "page_image_path": "data/pages/SEI - 01.1 - Geschäftsprozessanalyse. Grundlagen/page-0014.png"
+    },
+    {
+      "id": "q300",
+      "question": "Welche zwei Mechanismen, die mit RESTful Webservices in Verbindung stehen, werden im Kontext von Roy Fieldings Dissertation erwähnt?",
+      "answer": "Die genannten Mechanismen sind HATEOAS und Code on Demand.",
+      "doc_id": "VS-07a-WebServices_REST.pdf",
+      "page": 11,
+      "type": "text",
+      "subtype": "",
+      "gold_pages": [
+        "VS-07a-WebServices_REST.pdf#11"
+      ],
+      "page_image_path": "data/pages/VS-07a-WebServices_REST/page-0011.png"
+    }
+  ]
+}

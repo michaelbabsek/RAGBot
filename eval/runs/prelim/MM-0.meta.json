@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-24T22:12:00",
+  "git_commit": "ec422d0fce5d6a94b88de1ae24d24056325ccb43",
+  "python": "3.12.16",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "torch": "2.15.0",
+    "transformers": "5.23.0",
+    "sentence-transformers": "6.3.0",
+    "chromadb": "1.5.9",
+    "pymupdf": "2.1",
+    "ollama": "0.6.3",
+    "pyyaml": "6.0.3",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pillow": "13.0.0",
+    "torchcodec": "0.17.0",
+    "accelerate": "1.15.0",
+    "qwen-vl-utils": "0.0.14"
+  },
+  "config": "MM-0",
+  "where": null,
+  "rerank": false,
+  "embed_model": "Qwen/Qwen3-VL-Embedding-2B",
+  "rerank_model": null,
+  "device": "mps",
+  "candidates": 16,
+  "top_n": 4,
+  "testset": "eval/data/prelim/testset.json",
+  "testset_sha256": "605e0924754a234ae6c678e3c6e2560636bebc6e611661a1c800f61fc8bf19ba",
+  "index_collection_sha256": "62bea44fde01c278870f9ddcc62160c2a41bed4ec980debdd71935a5bfc7ca13"
+}

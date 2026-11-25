@@ -1,0 +1,14 @@
+# Exakte Versionen, mit denen die Evaluation lief (Python 3.12.16, macOS arm64, Ollama 0.40.15)
+torch==2.15.0
+transformers==5.23.0
+sentence-transformers==6.3.0
+chromadb==1.5.9
+pymupdf==2.1
+ollama==0.6.3
+pyyaml==6.0.3
+numpy==2.5.4
+scipy==1.18.1
+pillow==13.0.0
+torchcodec==0.17.0
+accelerate==1.15.0
+qwen-vl-utils==0.0.14

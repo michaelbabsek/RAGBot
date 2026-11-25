@@ -1,0 +1,171 @@
+# RAGBot – Multimodal Document Assistant
+
+An offline assistant that answers questions about PDF documents. It indexes each page twice: as extracted text and as a rendered page image. That way, charts, diagrams, screenshots and scanned pages are searchable as well, even where text extraction gets nothing out of them. Everything runs locally on a MacBook Air M4 (24 GB RAM). There are no cloud APIs.
+
+- **Multimodal retrieval:** text chunks and page images share one vector space (Qwen3-VL embeddings in ChromaDB)
+- **Two-stage search:** 16 candidates from the vector search, then a multimodal cross-encoder re-ranks them and keeps the top 4
+- **Grounded multi-turn chat** with a local Gemma model via Ollama; retrieved page images are passed to the model alongside the text
+- **Evaluated:** on 224 generated questions, re-ranking raises Recall@4 from 77% to 87%. On visual questions, page images raise it from 47% to 75% compared with text-only search ([details](#evaluation))
+
+## How it works
+
+```
+Ingestion
+  PDF ──PyMuPDF──┬─ page text ── 250-word chunks (25% overlap) ──┐
+                 └─ page render (PNG, 150 dpi) ───────────────────┤
+                                                                  ▼
+                              Qwen3-VL-Embedding-2B  →  ChromaDB (one collection, cosine)
+                                                        metadata: source, page, modality
+
+Question answering
+  question ─ embed ─▶ top-16 candidates (text chunks + page images, mixed by distance)
+           ─▶ Qwen3-VL-Reranker-2B scores (question, text | image) pairs
+           ─▶ top-4 with score ≥ 0
+           ─▶ prompt with context + attached page images ─▶ Gemma (Ollama) ─▶ streamed answer + sources
+```
+
+| Component | Model / library | Where |
+|---|---|---|
+| PDF parsing and rendering | PyMuPDF | `ragbot/ingestion/pdf_loader.py` |
+| Chunking | word windows, hyphenation repair | `ragbot/ingestion/chunking.py` |
+| Embeddings (text and image) | `Qwen/Qwen3-VL-Embedding-2B` (sentence-transformers, bf16) | `ragbot/embeddings.py` |
+| Vector store | ChromaDB (persistent, cosine) | `ragbot/vectorstore.py` |
+| Re-ranking | `Qwen/Qwen3-VL-Reranker-2B` (cross-encoder, bf16) | `ragbot/reranker.py` |
+| Retrieval pipeline | candidates → rerank → top-n | `ragbot/retriever.py` |
+| Chat | `gemma4:e4b` via Ollama, last 10 turns kept as history | `ragbot/llm.py`, `ragbot/chat_session.py` |
+
+The chat history stores only the user's questions and the answers. Context is retrieved fresh on every turn, which keeps the prompt small.
+
+## Setup
+
+Requirements: Python 3.12, [Ollama](https://ollama.com), and about 24 GB RAM. Apple Silicon (MPS) and CUDA are used automatically; otherwise everything runs on the CPU.
+
+```bash
+pip install -r requirements.txt
+ollama pull gemma4:e4b
+```
+
+The Hugging Face models (embedding and reranker, about 2B parameters each) download on first use.
+
+## Usage
+
+```bash
+# Index PDFs (re-ingesting a file replaces its old entries)
+python main.py ingest docs/*.pdf
+
+# Chat (default command); /reset clears the history, /exit quits
+python main.py chat
+```
+
+Each answer prints its sources together with their reranker score and vector distance, e.g. `VS-06-Sockets.pdf:p15:img (Score 3.12, Distanz 0.41)`.
+
+## Configuration
+
+All settings live in `ragbot/config.py` (`Settings`):
+
+| Setting | Default | Meaning |
+|---|---|---|
+| `embed_model` | `Qwen/Qwen3-VL-Embedding-2B` | multimodal embedding model |
+| `rerank_model` | `Qwen/Qwen3-VL-Reranker-2B` | multimodal cross-encoder |
+| `chat_model` | `gemma4:e4b` | Ollama chat model |
+| `chat_temperature` | `0.2` | sampling temperature |
+| `chunk_size` / `chunk_overlap` | `250` words / `0.25` | text chunking |
+| `render_dpi` | `150` | resolution of page images |
+| `top_k` | `16` | candidates from the vector search |
+| `rerank_top_n` | `4` | items passed to the LLM |
+| `rerank_min_score` | `0.0` | drop candidates below this reranker logit |
+| `max_history_turns` | `10` | user/assistant pairs sent to the LLM |
+
+## Evaluation
+
+The evaluation measures how much **re-ranking** and **page images** improve retrieval. All code, data and raw results are in [`eval/`](eval/README.md). Everything runs locally, with fixed seeds and against a frozen, hash-verified copy of the index.
+
+### Setup
+
+- **Corpus:** 82 German university lecture PDFs (software engineering, distributed systems, statistics, AI) with 1,394 pages and 2,882 indexed items (1,488 text chunks, 1,394 page images)
+- **Page selection:** each page is analysed with PyMuPDF and classified as `text` or `visual`.
+  - `visual` covers pages with large embedded images, many vector drawings relative to the document's median, or scanned pages.
+  - Near-identical pages (copied slide decks, incremental slide builds) are grouped into equivalence classes, and only one page per class is sampled.
+  - Pages are sampled stratified across documents.
+- **Question generation:** one question per page, generated by `gemma4:e4b`. That is deliberately *not* Qwen, so the questions are not tuned to the retrieval model's own embeddings.
+  - Text questions are generated from the extracted page text. Visual questions are generated from the rendered page image, with the instruction to ask only about content visible in the figure.
+  - Visual questions are then filtered: the same model gets only the extracted text, and every question it can answer from that text is discarded (69 of 180). Scans skip this filter.
+- **Test set:** 224 questions (120 text, 104 visual: 76 figures, 23 diagrams, 5 scans) from 75 documents
+- **Relevance:** judged at page level. Recall@4 counts as 1 if at least one of the 4 items passed on to the LLM (text chunk or page image) belongs to the gold page or to a page with identical content. Strict matching on the exact page gives the same numbers up to ±1 question.
+- **Statistics:** 95% bootstrap confidence intervals (10,000 resamples) and exact McNemar tests on paired per-question hits
+
+| Config | Index | Re-ranking |
+|---|---|---|
+| MM-0 | text + page images | no (top-4 by embedding similarity) |
+| MM-R | text + page images | yes (the deployed system) |
+| TXT-0 | text chunks only | no |
+| TXT-R | text chunks only | yes |
+
+All configurations use the same index and the same 16-candidate search. The text-only runs restrict the search to text chunks with a metadata filter. A check confirmed that MM-R returns exactly the same items as the production `Retriever`.
+
+### Results
+
+**Recall@4** (95% CI)
+
+| Config | All (n = 224) | Text (n = 120) | Visual (n = 104) |
+|---|---|---|---|
+| MM-0 | 76.8% [71.0, 82.1] | 95.0% [90.8, 98.3] | 55.8% [46.2, 64.4] |
+| **MM-R** | **87.1% [82.6, 91.5]** | **97.5% [94.2, 100]** | **75.0% [66.3, 82.7]** |
+| TXT-0 | 67.9% [61.6, 74.1] | 95.0% [90.8, 98.3] | 36.5% [26.9, 46.2] |
+| TXT-R | 74.6% [68.8, 80.4] | 98.3% [95.8, 100] | 47.1% [37.5, 56.7] |
+
+**Recall@16 and MRR@16** (all questions)
+
+| Config | Recall@16 | MRR@16 |
+|---|---|---|
+| MM-0 / MM-R | 90.2% | 0.682 → 0.827 |
+| TXT-0 / TXT-R | 82.6% | 0.612 → 0.693 |
+
+**Paired comparisons** (Recall@4)
+
+| Comparison | Questions | Δ (95% CI) | Improved / worsened | p (McNemar) |
+|---|---|---|---|---|
+| Re-ranking: MM-0 → MM-R | all | +10.3 pp [6.2, 14.3] | 23 / 0 | < 0.001 |
+| Re-ranking: MM-0 → MM-R | text | +2.5 pp [0.0, 5.8] | 3 / 0 | 0.25 |
+| Re-ranking: MM-0 → MM-R | visual | +19.2 pp [11.5, 26.9] | 20 / 0 | < 0.001 |
+| Page images: TXT-R → MM-R | visual | +27.9 pp [19.2, 36.5] | 30 / 1 | < 0.001 |
+| Page images: TXT-R → MM-R | text | −0.8 pp [−2.5, 0.0] | 0 / 1 | 1.00 |
+
+**Latency per query** on a MacBook Air M4 (p50 / p95)
+
+| | Retrieval | Re-ranking |
+|---|---|---|
+| Text + page images | 0.13 s / 0.31 s | 19.2 s / 35.0 s |
+| Text only | 0.12 s / 0.15 s | 6.8 s / 13.7 s |
+
+### Findings
+
+- **Re-ranking helps and never hurt.** It fixed 23 questions and broke none. Almost all of the gain comes from visual questions; on text questions, plain vector search is already at 95%.
+- **The reranker is close to its ceiling.** The gold page is among the 16 candidates for 90.2% of questions, and re-ranking brings 87.1% into the top 4. Further gains have to come from candidate retrieval, not from the reranker.
+- **Page images are what make visual content findable.** On visual questions, text-only search reaches 47%; with page images it reaches 75%. Text questions are unaffected. Only 2 of the 30 rescued questions are scans without any extractable text. The other 28 are slides where the relevant information sits in a screenshot, code image or figure.
+- **Re-ranking is the bottleneck.** Scoring 16 pairs, many of them page images, takes about 19 s per query on the M4, compared with about 0.1 s for the vector search alone.
+- The production threshold `rerank_min_score = 0` costs about 1 pp of Recall@4 (86.2%). In return, fewer items are passed on: 3.1 on average, and 2.5 for visual questions.
+
+### Limitations
+
+- The questions were **generated and filtered automatically and not reviewed by hand.** Some are weaker than hand-written questions would be, for example overly specific details or vague phrasing. The results describe the retrieval system on this generated test set, not on real user queries.
+- The overall Recall@4 depends on the mix of question types. Visual pages make up 46% of the test set, which is more than in the corpus.
+- There is a single corpus (German lecture slides and exercise sheets) and a single hardware setup.
+
+Reproduce: see [`eval/README.md`](eval/README.md). Data and results of this run are in `eval/data/prelim/`, `eval/runs/prelim/` and `eval/results/prelim/`; the full report is [`eval/results/prelim/report.md`](eval/results/prelim/report.md).
+
+## Project structure
+
+```
+main.py                 CLI: ingest / chat
+ragbot/
+  config.py             Settings
+  embeddings.py         Qwen3-VL embedder (text + image)
+  reranker.py           Qwen3-VL cross-encoder
+  vectorstore.py        ChromaDB wrapper
+  retriever.py          candidates → rerank → top-n
+  chat_session.py       history + retrieval + LLM orchestration
+  llm.py, prompts.py    Ollama chat, prompt construction
+  ingestion/            PDF loading, chunking, ingestion pipeline
+eval/                   retrieval evaluation (see eval/README.md)
+```
